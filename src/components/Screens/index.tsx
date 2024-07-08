@@ -14,6 +14,7 @@ import applyImg from "@/../public/images/Apply Success.png"
 import hireImg from "@/../public/images/hire-btn-sucess.png"
 import homeImg from "@/../public/images/homescreen.png"
 import splashImg from "@/../public/images/splash screen logo.png"
+import mobileframe from '@/../public/images/mobile-frame.png'
 
 const Screens = () => {
   return (
@@ -66,9 +67,9 @@ const Screens = () => {
                 <Image
                   width={288}
                   height={594}
-                  src={dashbordImg}
+                  src={mobileframe}
                   alt="mobile-frame"
-                  className="mx-auto max-w-full rounded-2xl"
+                  className="mx-auto max-w-full"
                 />
               </div>
 
@@ -79,7 +80,7 @@ const Screens = () => {
                     height={573}
                     src={adImg}
                     alt="screenshot"
-                    className="mx-auto w-full rounded-2xl"
+                    className="mx-auto w-full rounded-[2.5rem]"
                   />
                 </div>
               </SwiperSlide>
@@ -91,7 +92,7 @@ const Screens = () => {
                     height={573}
                     src={applicationImg}
                     alt="screenshot"
-                    className="mx-auto w-full rounded-2xl"
+                    className="mx-auto w-full rounded-[2.5rem]"
                   />
                 </div>
               </SwiperSlide>
@@ -101,9 +102,9 @@ const Screens = () => {
                   <Image
                     width={265}
                     height={573}
-                    src={splashImg}
+                    src={dashbordImg}
                     alt="screenshot"
-                    className="mx-auto w-full rounded-2xl"
+                    className="mx-auto w-full rounded-[2.5rem]"
                   />
                 </div>
               </SwiperSlide>
@@ -115,7 +116,7 @@ const Screens = () => {
                     height={573}
                     src={hireImg}
                     alt="screenshot"
-                    className="mx-auto w-full rounded-2xl"
+                    className="mx-auto w-full rounded-[2.5rem]"
                   />
                 </div>
               </SwiperSlide>
@@ -127,7 +128,7 @@ const Screens = () => {
                     height={573}
                     src={homeImg}
                     alt="screenshot"
-                    className="mx-auto w-full rounded-2xl"
+                    className="mx-auto w-full rounded-[2.5rem]"
                   />
                 </div>
               </SwiperSlide>
@@ -139,7 +140,7 @@ const Screens = () => {
                     height={573}
                     src={applyImg}
                     alt="screenshot"
-                    className="mx-auto w-full rounded-2xl"
+                    className="mx-auto w-full rounded-[2.5rem]"
                   />
                 </div>
               </SwiperSlide>
