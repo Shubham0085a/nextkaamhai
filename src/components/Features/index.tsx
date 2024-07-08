@@ -180,7 +180,7 @@ const featuresData: Feature[] = [
 const Features = () => {
   return (
     <>
-      <section id="features" className="relative z-10 pt-[110px]">
+      <section id="features" className="relative z-10 pt-[110px] bg-stroke dark:bg-transparent">
         <div className="container max-w-[1390px]">
           <div className="rounded-2xl bg-white px-5 pb-14 pt-14 shadow-card dark:bg-dark dark:shadow-card-dark md:pb-1 lg:pb-5 lg:pt-20 xl:px-10">
             <div className="-mx-4 flex flex-wrap">

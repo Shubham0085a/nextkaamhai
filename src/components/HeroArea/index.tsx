@@ -11,7 +11,7 @@ const HeroArea = () => {
 
   return (
     <>
-      <section id="home" className="pt-[165px]">
+      <section id="home" className="pt-[165px] bg-stroke dark:bg-transparent">
         <div className="container lg:max-w-[1305px] lg:px-10">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-7/12">

@@ -45,7 +45,7 @@ const clientsData: Client[] = [
 const Clients = () => {
   return (
     <>
-      <section className="relative z-10 bg-[#F8FAFB] pb-[50px] pt-[70px] dark:bg-[#15182B]">
+      <section className="relative z-10 bg-gray pb-[50px] pt-[70px] dark:bg-dark">
         <div
           className="wow fadeInUp container overflow-hidden lg:max-w-[1200px]"
           data-wow-delay=".2s"

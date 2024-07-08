@@ -39,7 +39,7 @@ const testimonialData: Testimonial[] = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="relative z-10 pb-[60px] pt-[110px]">
+    <section id="testimonials" className="relative z-10 pb-[60px] pt-[110px] bg-stroke dark:bg-transparent">
       <div className="container">
         <div
           className="wow fadeInUp mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]"

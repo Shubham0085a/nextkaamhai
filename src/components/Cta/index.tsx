@@ -7,7 +7,7 @@ import screenPhone from "@/../public/images/Screen Phone.png"
 const Cta = () => {
   return (
     <>
-      <section id="cta" className="relative z-10 pt-[110px]">
+      <section id="cta" className="relative z-10 pt-[110px] bg-stroke dark:bg-transparent">
         <div className="container max-w-[1390px]">
           <div className="rounded-2xl bg-white px-10 pt-14 shadow-card dark:bg-dark dark:shadow-card-dark sm:px-20 lg:px-12 lg:pt-20 xl:px-20">
             <div className="-mx-4 flex flex-wrap">

@@ -8,7 +8,7 @@ import leftScreen from "@/../public/images/Left iPhone X.png"
 const About = () => {
   return (
     <>
-      <section id="about" className="relative pt-[150px]">
+      <section id="about" className="relative pt-[150px] bg-stroke dark:bg-transparent">
         <div className="container lg:max-w-[1120px]">
           <div>
             <div className="-mx-4 flex flex-wrap items-center justify-between">
