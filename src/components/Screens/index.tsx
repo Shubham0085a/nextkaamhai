@@ -7,6 +7,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 import Graphics from "@/components/Screens/Graphics";
+import dashbordImg from "@/../public/images/dashboard.png"
+import adImg from "@/../public/images/ads-manager.png"
+import applicationImg from "@/../public/images/applications.png"
+import applyImg from "@/../public/images/Apply Success.png"
+import hireImg from "@/../public/images/hire-btn-sucess.png"
+import homeImg from "@/../public/images/homescreen.png"
+import splashImg from "@/../public/images/splash screen logo.png"
 
 const Screens = () => {
   return (
@@ -55,22 +62,22 @@ const Screens = () => {
                 },
               }}
             >
-              <div className="absolute left-0 right-0 top-0 z-50 mx-auto w-full md:w-1/3">
+              <div className="absolute left-0 right-0 top-0 z-50 mx-auto overflow-hidden w-full md:w-1/3">
                 <Image
                   width={288}
                   height={594}
-                  src={"/images/screens/mobile-frame.png"}
+                  src={dashbordImg}
                   alt="mobile-frame"
-                  className="mx-auto max-w-full"
+                  className="mx-auto max-w-full rounded-2xl"
                 />
               </div>
 
               <SwiperSlide>
-                <div className="mx-auto w-full max-w-[252px] xs:max-w-[265px]">
+                <div className="mx-auto w-full max-w-[252px] overflow-hidden xs:max-w-[265px]">
                   <Image
                     width={265}
                     height={573}
-                    src={"/images/screens/screen-1-light.png"}
+                    src={adImg}
                     alt="screenshot"
                     className="mx-auto w-full rounded-2xl"
                   />
@@ -78,11 +85,11 @@ const Screens = () => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="mx-auto w-full max-w-[252px] xs:max-w-[265px]">
+                <div className="mx-auto w-full max-w-[252px] overflow-hidden xs:max-w-[265px]">
                   <Image
                     width={265}
                     height={573}
-                    src={"/images/screens/screen-2-light.png"}
+                    src={applicationImg}
                     alt="screenshot"
                     className="mx-auto w-full rounded-2xl"
                   />
@@ -90,11 +97,11 @@ const Screens = () => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="mx-auto w-full max-w-[252px] xs:max-w-[265px]">
+                <div className="mx-auto w-full max-w-[252px] overflow-hidden xs:max-w-[265px]">
                   <Image
                     width={265}
                     height={573}
-                    src={"/images/screens/screen-3-light.png"}
+                    src={splashImg}
                     alt="screenshot"
                     className="mx-auto w-full rounded-2xl"
                   />
@@ -102,11 +109,11 @@ const Screens = () => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="mx-auto w-full max-w-[252px] xs:max-w-[265px]">
+                <div className="mx-auto w-full max-w-[252px] overflow-hidden xs:max-w-[265px]">
                   <Image
                     width={265}
                     height={573}
-                    src={"/images/screens/screen-1-light.png"}
+                    src={hireImg}
                     alt="screenshot"
                     className="mx-auto w-full rounded-2xl"
                   />
@@ -114,11 +121,11 @@ const Screens = () => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="mx-auto w-full max-w-[252px] xs:max-w-[265px]">
+                <div className="mx-auto w-full max-w-[252px] overflow-hidden xs:max-w-[265px]">
                   <Image
                     width={265}
                     height={573}
-                    src={"/images/screens/screen-2-light.png"}
+                    src={homeImg}
                     alt="screenshot"
                     className="mx-auto w-full rounded-2xl"
                   />
@@ -126,11 +133,11 @@ const Screens = () => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className="mx-auto w-full max-w-[252px] xs:max-w-[265px]">
+                <div className="mx-auto w-full max-w-[252px] overflow-hidden xs:max-w-[265px]">
                   <Image
                     width={265}
                     height={573}
-                    src={"/images/screens/screen-3-light.png"}
+                    src={applyImg}
                     alt="screenshot"
                     className="mx-auto w-full rounded-2xl"
                   />

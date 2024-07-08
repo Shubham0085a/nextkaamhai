@@ -94,10 +94,19 @@ const FooterBottom = () => {
 
             <div className="w-full px-3 md:w-1/2 lg:w-1/3">
               <div className="flex items-center justify-center space-x-4 sm:space-x-8 md:justify-end lg:justify-end">
-                <Link href="#" className="text-base text-white">
+                <Link href="/privacy"
+                    rel="external nofollow noopener"
+                    target="_blank" className="text-base text-white">
                   Privacy Policy
                 </Link>
-                <Link href="#" className="text-base text-white">
+                <Link href="/refund"
+                    rel="external nofollow noopener"
+                    target="_blank" className="text-base text-white">
+                  Refund Policy
+                </Link>
+                <Link href="/termsconditions"
+                    rel="external nofollow noopener"
+                    target="_blank" className="text-base text-white">
                   Terms and conditions
                 </Link>
               </div>
