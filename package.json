@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "algoliasearch": "^4.24.0",
     "axios": "^1.7.2",
+    "cheerio": "^1.0.0-rc.12",
     "fslightbox-react": "^1.7.6",
     "next": "14.2.4",
     "next-auth": "^4.24.7",
+    "next-sanity": "^9.4.2",
     "react": "^18",
     "react-dom": "^18",
     "react-instantsearch-dom": "^6.40.4",
