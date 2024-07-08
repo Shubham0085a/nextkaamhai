@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import FsLightbox from "fslightbox-react";
-import screenPhone from "@/../public/images/kaamhai.png"
+import screenPhone from "@/../public/images/Screen Phone.png"
 
 const HeroArea = () => {
   const [toggler, setToggler] = useState(false);
@@ -138,7 +138,7 @@ const HeroArea = () => {
                   height={546}
                   src={screenPhone}
                   alt="hero image"
-                  className="mx-auto max-w-full rounded-3xl"
+                  className="mx-auto max-w-full"
                 />
                 <div className="max-auto absolute left-0 right-0 top-0 -z-10 aspect-square w-full rounded-full bg-gradient-1">
                   <div className="absolute right-0 top-5">
