@@ -47,7 +47,7 @@ const Clients = () => {
     <>
       <section className="relative z-10 bg-gray pb-[50px] pt-[70px] dark:bg-dark">
         <div
-          className="wow fadeInUp container overflow-hidden lg:max-w-[1200px]"
+          className="wow animate-fadeInUp container overflow-hidden lg:max-w-[1200px]"
           data-wow-delay=".2s"
         >
           <div className="-mx-4 flex flex-wrap items-center justify-center">

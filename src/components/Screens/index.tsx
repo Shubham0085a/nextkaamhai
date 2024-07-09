@@ -22,11 +22,11 @@ const Screens = () => {
       <section id="screens" className="relative z-20 pt-[110px] bg-stroke dark:bg-transparent">
         <div className="container">
           <div
-            className="wow fadeInUp mx-auto mb-10 max-w-[690px] text-center"
+            className="wow animate-fadeInUp mx-auto mb-10 max-w-[690px] text-center"
             data-wow-delay=".2s"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-              App Screenshots
+              <span className="inline bg-gradient-4 bg-clip-text text-transparent">App</span> Screenshots
             </h2>
             <p className="text-base text-body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
@@ -38,7 +38,7 @@ const Screens = () => {
 
         <div className="container">
           <div
-            className="wow fadeInUp mx-auto max-w-[1000px]"
+            className="wow animate-fadeInUp mx-auto max-w-[1000px]"
             data-wow-delay=".2s"
           >
             <Swiper

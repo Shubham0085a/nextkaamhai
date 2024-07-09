@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import FsLightbox from "fslightbox-react";
-import screenPhone from "@/../public/images/Screen Phone.png"
+import screenPhone from "@/../public/images/Screen Phone.png";
 
 const HeroArea = () => {
   const [toggler, setToggler] = useState(false);
@@ -16,25 +16,27 @@ const HeroArea = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-7/12">
               <div
-                className="wow fadeInUp mb-12 lg:mb-0 lg:max-w-[570px]"
+                className="wow animate-fadeInUp mb-12 lg:mb-0 lg:max-w-[570px]"
                 data-wow-delay=".3s"
               >
-                
                 <h1 className="mb-6 text-3xl font-bold leading-tight text-black dark:text-white sm:text-[40px] md:text-[50px] lg:text-[42px] xl:text-[50px]">
-                Simplified workforce hiring &
-                  <span className="inline bg-gradient-1 bg-clip-text text-transparent">
+                  Simplified workforce hiring &
+                  <span className="inline bg-gradient-4 bg-clip-text text-transparent">
                     {" "}
                     Management{" "}
                   </span>
                   solution.
                 </h1>
                 <p className="mb-10 max-w-[475px] text-base leading-relaxed text-body">
-                Upgrade your hiring process with Kaamhai, Designed with verified databases
+                  Upgrade your hiring process with Kaamhai, Designed with
+                  verified databases
                 </p>
 
                 <div className="flex flex-wrap items-center">
                   <Link
-                    href="#"
+                    href="https://www.apple.com/app-store/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mb-6 mr-6 inline-flex h-[60px] items-center rounded-lg bg-black px-[30px] py-[14px] text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-opacity-90"
                   >
                     <span className="mr-[18px] border-r border-stroke border-opacity-40 pr-[18px] leading-relaxed dark:border-[#BDBDBD]">
@@ -42,17 +44,36 @@ const HeroArea = () => {
                     </span>
                     <span>
                       <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
+                        height="34"
+                        width="34"
+                        viewBox="0 0 960 960"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <g clipPath="url(#clip0_3_3641)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          {" "}
                           <path
-                            d="M11.624 7.2221C10.748 7.2221 9.392 6.2261 7.964 6.2621C6.08 6.2861 4.352 7.3541 3.38 9.0461C1.424 12.4421 2.876 17.4581 4.784 20.2181C5.72 21.5621 6.824 23.0741 8.288 23.0261C9.692 22.9661 10.22 22.1141 11.924 22.1141C13.616 22.1141 14.096 23.0261 15.584 22.9901C17.096 22.9661 18.056 21.6221 18.98 20.2661C20.048 18.7061 20.492 17.1941 20.516 17.1101C20.48 17.0981 17.576 15.9821 17.54 12.6221C17.516 9.8141 19.832 8.4701 19.94 8.4101C18.62 6.4781 16.592 6.2621 15.884 6.2141C14.036 6.0701 12.488 7.2221 11.624 7.2221ZM14.744 4.3901C15.524 3.4541 16.04 2.1461 15.896 0.850098C14.78 0.898098 13.436 1.5941 12.632 2.5301C11.912 3.3581 11.288 4.6901 11.456 5.9621C12.692 6.0581 13.964 5.3261 14.744 4.3901Z"
-                            fill="currentColor"
-                          />
+                            d="M697.234 663.371C716.41 696.729 667.671 724.494 648.395 693.333C606.548 628.614 569.794 560.699 528.745 495.381C516.161 464.219 479.107 431.161 495.986 396.005C540.43 337.178 577.384 418.776 594.363 456.829C639.506 550.512 610.443 525.243 710.717 524.544C754.263 524.644 758.757 591.361 715.312 596.155C698.732 598.052 682.453 597.852 665.674 598.252C677.159 619.725 684.95 642.297 697.234 663.371Z"
+                            fill="white"
+                          ></path>{" "}
+                          <path
+                            d="M474.312 257.679C486.597 230.913 517.059 198.453 545.224 224.92C564.3 242.298 551.316 269.465 538.332 287.242C489.194 363.747 450.242 445.844 405.598 524.845C445.448 528.341 485.598 525.844 525.149 532.835C564.1 539.827 558.907 597.455 519.256 598.353C442.153 601.35 365.049 595.457 287.845 599.652C260.28 597.554 225.024 612.336 203.751 589.065C161.104 516.456 275.761 527.442 317.608 524.546C343.776 499.377 356.659 456.93 377.833 425.769C395.311 394.608 412.39 363.147 429.868 331.986C432.964 322.199 418.982 314.109 415.486 305.12C349.169 230.713 442.153 172.885 474.312 257.679Z"
+                            fill="white"
+                          ></path>{" "}
+                          <path
+                            d="M330.292 643.197C329.393 609.04 284.549 595.856 265.373 626.118C256.884 640.301 246.097 654.483 242.302 670.763C234.811 703.022 275.56 724.995 298.332 700.925C313.513 684.645 325.198 664.87 330.292 643.197ZM545.223 224.92C516.959 198.353 486.597 230.813 474.312 257.679C442.152 172.885 349.068 230.713 415.485 305.22C418.981 314.208 432.864 322.198 429.867 332.086C412.389 363.347 395.311 394.708 377.833 425.869C356.659 457.03 343.775 499.377 317.608 524.645C275.76 527.442 161.103 516.455 203.85 589.165C225.123 612.535 260.379 597.654 287.945 599.751C365.148 595.557 442.152 601.449 519.356 598.453C559.006 597.554 564.2 539.926 525.248 532.935C485.698 525.944 445.548 528.341 405.698 524.945C450.342 445.944 489.293 363.746 538.432 287.342C551.316 269.564 564.299 242.398 545.223 224.92ZM342.277 86.6927C463.326 84.6952 587.87 65.619 705.523 104.97C830.467 143.522 874.012 278.153 872.814 397.105C873.713 481.299 874.012 566.193 858.931 649.19C834.262 804.895 746.172 873.01 590.666 874.608C422.377 880.301 172.489 908.965 104.474 711.012C76.5092 599.452 86.6964 481.1 88.1946 366.843C98.9811 200.75 163.301 90.2882 342.277 86.6927ZM715.411 596.156C758.856 591.362 754.362 524.645 710.816 524.545C610.542 525.244 639.605 550.513 594.462 456.83C577.383 418.778 540.529 337.279 496.085 396.006C479.206 431.062 516.359 464.121 528.844 495.382C569.892 560.6 606.647 628.515 648.494 693.334C667.77 724.495 716.509 696.73 697.333 663.372C685.048 642.298 677.258 619.726 665.773 598.253C682.452 597.854 698.831 598.053 715.411 596.156Z"
+                            fill="#000000"
+                          ></path>{" "}
+                          <path
+                            d="M265.471 626.12C284.647 595.758 329.491 609.042 330.39 643.199C325.296 664.872 313.511 684.647 298.53 701.027C275.758 724.997 235.009 703.124 242.5 670.864C246.195 654.485 256.882 640.302 265.471 626.12Z"
+                            fill="white"
+                          ></path>{" "}
                         </g>
                         <defs>
                           <clipPath id="clip0_3_3641">
@@ -64,32 +85,34 @@ const HeroArea = () => {
                   </Link>
 
                   <Link
-                    href="#"
+                    href="https://play.google.com/store/apps/details?id=com.kaamhai"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mb-6 mr-6 inline-flex h-[60px] items-center rounded-lg bg-black px-[30px] py-[14px] text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-opacity-90"
                   >
                     <span className="mr-[18px] border-r border-stroke border-opacity-40 pr-[18px] leading-relaxed dark:border-[#BDBDBD]">
                       Download Now
                     </span>
                     <span>
-                    <svg
-                            width="34"
-                            height="34"
-                            viewBox="0 0 34 34"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <g clipPath="url(#clip0_3_3641)">
-                            <path
-                              d="M4 28.9958V4.9125C4 4.07667 4.48167 3.34 5.19 3L19.1442 16.9542L5.19 30.9083C4.48167 30.5542 4 29.8317 4 28.9958ZM23.5642 21.3742L8.32083 30.1858L20.3483 18.1583L23.5642 21.3742ZM28.31 15.2683C28.7917 15.6508 29.1458 16.2458 29.1458 16.9542C29.1458 17.6625 28.8342 18.2292 28.3383 18.6258L25.0942 20.4958L21.5525 16.9542L25.0942 13.4125L28.31 15.2683ZM8.32083 3.7225L23.5642 12.5342L20.3483 15.75L8.32083 3.7225Z"
-                              fill="currentColor"
-                            />
-                            </g>
-                            <defs>
-                          <clipPath id="clip0_3_3641">
-                            <rect width="24" height="24" fill="white" />
-                          </clipPath>
-                        </defs>
-                          </svg>
+                      <div className="h-8 w-8">
+                        <svg
+                          width="100%"
+                          height="100%"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4 28.9958V4.9125C4 4.07667 4.48167 3.34 5.19 3L19.1442 16.9542L5.19 30.9083C4.48167 30.5542 4 29.8317 4 28.9958ZM23.5642 21.3742L8.32083 30.1858L20.3483 18.1583L23.5642 21.3742ZM28.31 15.2683C28.7917 15.6508 29.1458 16.2458 29.1458 16.9542C29.1458 17.6625 28.8342 18.2292 28.3383 18.6258L25.0942 20.4958L21.5525 16.9542L25.0942 13.4125L28.31 15.2683ZM8.32083 3.7225L23.5642 12.5342L20.3483 15.75L8.32083 3.7225Z"
+                            fill="currentColor"
+                          />
+                          <defs>
+                            <clipPath id="clip0_3_3641">
+                              <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
                     </span>
                   </Link>
 
@@ -130,7 +153,7 @@ const HeroArea = () => {
 
             <div className="w-full px-4 lg:w-5/12">
               <div
-                className="wow fadeInUp relative z-10 mx-auto w-full max-w-[530px] pt-8 lg:mr-0"
+                className="wow animate-fadeInUp relative z-10 mx-auto w-full max-w-[530px] pt-8 lg:mr-0"
                 data-wow-delay=".3s"
               >
                 <Image

@@ -2,22 +2,25 @@ import React from "react";
 import Graphics from "@/components/Cta/Graphics";
 import Image from "next/image";
 import Link from "next/link";
-import screenPhone from "@/../public/images/kaamhai.png"
+import screenPhone from "@/../public/images/kaamhai.png";
 
 const Cta = () => {
   return (
     <>
-      <section id="cta" className="relative z-10 pt-[110px] bg-stroke dark:bg-transparent">
+      <section
+        id="cta"
+        className="relative z-10 pt-[110px] bg-stroke dark:bg-transparent"
+      >
         <div className="container max-w-[1390px]">
           <div className="rounded-2xl bg-white px-10 pt-14 shadow-card dark:bg-dark dark:shadow-card-dark sm:px-20 lg:px-12 lg:pt-20 xl:px-20">
             <div className="-mx-4 flex flex-wrap">
               <div className="w-full self-center px-4 lg:w-1/2">
                 <div
-                  className="wow fadeInUp mx-auto max-w-[530px] text-center lg:ml-0 lg:text-left"
+                  className="wow animate-fadeInUp mx-auto max-w-[530px] text-center lg:ml-0 lg:text-left"
                   data-wow-delay=".2s"
                 >
                   <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[38px] md:leading-tight">
-                  Download Kaamhai Now & Get started for free.
+                    Download Kaamhai Now & Get started for free.
                   </h2>
                   <p className="mb-10 text-base text-body">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -28,7 +31,9 @@ const Cta = () => {
                   <div className="-mx-[10px] flex flex-wrap items-center justify-center lg:justify-start">
                     <div className="inline-block px-[10px]">
                       <Link
-                        href="#"
+                        href="https://play.google.com/store/apps/details?id=com.kaamhai"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="mb-5 inline-flex items-center rounded-md bg-primary py-[10px] pl-4 pr-5 text-white hover:bg-opacity-90"
                       >
                         <span className="mr-[10px]">
@@ -58,21 +63,44 @@ const Cta = () => {
 
                     <div className="inline-block px-[10px]">
                       <Link
-                        href="#"
+                        href="https://www.apple.com/app-store/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="mb-5 inline-flex items-center rounded-md bg-black py-[10px] pl-4 pr-5 text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-opacity-90"
                       >
                         <span className="mr-[10px]">
                           <svg
-                            width="34"
                             height="34"
-                            viewBox="0 0 34 34"
+                            width="34"
+                            viewBox="0 0 960 960"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <path
-                              d="M26.5058 27.625C25.33 29.3817 24.0833 31.0959 22.185 31.1242C20.2867 31.1667 19.6775 30.005 17.5242 30.005C15.3567 30.005 14.6908 31.0959 12.8917 31.1667C11.0358 31.2375 9.63333 29.2967 8.44333 27.5825C6.02083 24.0834 4.165 17.6375 6.65833 13.3025C7.89083 11.1492 10.1008 9.78921 12.495 9.74671C14.3083 9.71837 16.0367 10.9792 17.1558 10.9792C18.2608 10.9792 20.3575 9.46337 22.5533 9.69004C23.4742 9.73254 26.0525 10.0584 27.71 12.495C27.5825 12.58 24.6358 14.3084 24.6642 17.8925C24.7067 22.1709 28.4183 23.6017 28.4608 23.6159C28.4183 23.715 27.8658 25.6559 26.5058 27.625ZM18.4167 4.95837C19.4508 3.78254 21.165 2.89004 22.5817 2.83337C22.7658 4.49087 22.1 6.16254 21.1083 7.35254C20.1308 8.55671 18.5158 9.49171 16.9292 9.36421C16.7167 7.73504 17.51 6.03504 18.4167 4.95837Z"
-                              fill="currentColor"
-                            />
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                              id="SVGRepo_tracerCarrier"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                              {" "}
+                              <path
+                                d="M697.234 663.371C716.41 696.729 667.671 724.494 648.395 693.333C606.548 628.614 569.794 560.699 528.745 495.381C516.161 464.219 479.107 431.161 495.986 396.005C540.43 337.178 577.384 418.776 594.363 456.829C639.506 550.512 610.443 525.243 710.717 524.544C754.263 524.644 758.757 591.361 715.312 596.155C698.732 598.052 682.453 597.852 665.674 598.252C677.159 619.725 684.95 642.297 697.234 663.371Z"
+                                fill="white"
+                              ></path>{" "}
+                              <path
+                                d="M474.312 257.679C486.597 230.913 517.059 198.453 545.224 224.92C564.3 242.298 551.316 269.465 538.332 287.242C489.194 363.747 450.242 445.844 405.598 524.845C445.448 528.341 485.598 525.844 525.149 532.835C564.1 539.827 558.907 597.455 519.256 598.353C442.153 601.35 365.049 595.457 287.845 599.652C260.28 597.554 225.024 612.336 203.751 589.065C161.104 516.456 275.761 527.442 317.608 524.546C343.776 499.377 356.659 456.93 377.833 425.769C395.311 394.608 412.39 363.147 429.868 331.986C432.964 322.199 418.982 314.109 415.486 305.12C349.169 230.713 442.153 172.885 474.312 257.679Z"
+                                fill="white"
+                              ></path>{" "}
+                              <path
+                                d="M330.292 643.197C329.393 609.04 284.549 595.856 265.373 626.118C256.884 640.301 246.097 654.483 242.302 670.763C234.811 703.022 275.56 724.995 298.332 700.925C313.513 684.645 325.198 664.87 330.292 643.197ZM545.223 224.92C516.959 198.353 486.597 230.813 474.312 257.679C442.152 172.885 349.068 230.713 415.485 305.22C418.981 314.208 432.864 322.198 429.867 332.086C412.389 363.347 395.311 394.708 377.833 425.869C356.659 457.03 343.775 499.377 317.608 524.645C275.76 527.442 161.103 516.455 203.85 589.165C225.123 612.535 260.379 597.654 287.945 599.751C365.148 595.557 442.152 601.449 519.356 598.453C559.006 597.554 564.2 539.926 525.248 532.935C485.698 525.944 445.548 528.341 405.698 524.945C450.342 445.944 489.293 363.746 538.432 287.342C551.316 269.564 564.299 242.398 545.223 224.92ZM342.277 86.6927C463.326 84.6952 587.87 65.619 705.523 104.97C830.467 143.522 874.012 278.153 872.814 397.105C873.713 481.299 874.012 566.193 858.931 649.19C834.262 804.895 746.172 873.01 590.666 874.608C422.377 880.301 172.489 908.965 104.474 711.012C76.5092 599.452 86.6964 481.1 88.1946 366.843C98.9811 200.75 163.301 90.2882 342.277 86.6927ZM715.411 596.156C758.856 591.362 754.362 524.645 710.816 524.545C610.542 525.244 639.605 550.513 594.462 456.83C577.383 418.778 540.529 337.279 496.085 396.006C479.206 431.062 516.359 464.121 528.844 495.382C569.892 560.6 606.647 628.515 648.494 693.334C667.77 724.495 716.509 696.73 697.333 663.372C685.048 642.298 677.258 619.726 665.773 598.253C682.452 597.854 698.831 598.053 715.411 596.156Z"
+                                fill="#000000"
+                              ></path>{" "}
+                              <path
+                                d="M265.471 626.12C284.647 595.758 329.491 609.042 330.39 643.199C325.296 664.872 313.511 684.647 298.53 701.027C275.758 724.997 235.009 703.124 242.5 670.864C246.195 654.485 256.882 640.302 265.471 626.12Z"
+                                fill="white"
+                              ></path>{" "}
+                            </g>
                           </svg>
                         </span>
                         <span className="text-left">
@@ -91,7 +119,7 @@ const Cta = () => {
 
               <div className="w-full px-4 lg:w-1/2">
                 <div
-                  className="wow fadeInUp relative z-10 mx-auto mt-20 max-w-[435px] lg:mt-0"
+                  className="wow animate-fadeInUp relative z-10 mx-auto mt-20 max-w-[435px] lg:mt-0"
                   data-wow-delay=".3s"
                 >
                   <Image

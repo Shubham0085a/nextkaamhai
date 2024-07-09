@@ -14,7 +14,7 @@ const About = () => {
             <div className="-mx-4 flex flex-wrap items-center justify-between">
               <div className="w-full px-4 lg:w-1/2">
                 <div
-                  className="wow fadeInUp relative z-10 mx-auto mb-14 w-full max-w-[470px] pb-6 lg:mx-0 lg:mb-0"
+                  className="wow animate-fadeInUp relative z-10 mx-auto mb-14 w-full max-w-[470px] pb-6 lg:mx-0 lg:mb-0"
                   data-wow-delay=".2s"
                 >
                   <Image
@@ -92,11 +92,11 @@ const About = () => {
 
               <div className="w-full px-4 lg:w-1/2">
                 <div
-                  className="wow fadeInUp lg:ml-auto lg:max-w-[510px]"
+                  className="wow animate-fadeInUp lg:ml-auto lg:max-w-[510px]"
                   data-wow-delay=".3s"
                 >
                   <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-                  Employee in your <span className="text-yellow-400">safe</span> hands
+                  Employee in your <span className="inline bg-gradient-4 bg-clip-text text-transparent">safe  hands</span>
                   </h2>
                   <p className="mb-[30px] text-base leading-relaxed text-body">
                   Once hired, employee profiles be come hidden from public searches; you&apos;ll be notified if they start job hunting, allowing you to address concerns, manage departures smoothly with proper notice periods, and provide constructive feedback for future reference.
@@ -117,11 +117,11 @@ const About = () => {
             <div className="-mx-4 flex flex-wrap items-center justify-between">
               <div className="w-full px-4 lg:w-1/2">
                 <div
-                  className="wow fadeInUp lg:max-w-[510px]"
+                  className="wow animate-fadeInUp lg:max-w-[510px]"
                   data-wow-delay=".2s"
                 >
                   <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-                  Legitimate <span className="text-yellow-400">Job Opportunities</span> at Your Fingertips
+                  Legitimate <span className="inline bg-gradient-4 bg-clip-text text-transparent">Job Opportunities</span> at Your Fingertips
                   </h2>
                   <ul className="mb-[30px] text-base leading-relaxed ml-5 list-disc text-body">
                     <li>Verified Jobs</li>
@@ -142,7 +142,7 @@ const About = () => {
 
               <div className="order-first w-full px-4 lg:order-last lg:w-1/2">
                 <div
-                  className="wow fadeInUp relative z-10 mx-auto mb-14 w-full max-w-[470px] pb-6 lg:mb-0 lg:mr-0"
+                  className="wow animate-fadeInUp relative z-10 mx-auto mb-14 w-full max-w-[470px] pb-6 lg:mb-0 lg:mr-0"
                   data-wow-delay=".3s"
                 >
                   <Image
