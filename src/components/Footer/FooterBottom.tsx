@@ -9,7 +9,7 @@ const FooterBottom = () => {
           <div className="-mx-3 flex flex-wrap">
             <div className="w-full px-3">
               <p className=" text-center text-base text-white">
-                © 2024 Kaamhai. All rights reserved | Technology partener{" "}
+                © 2024 Kaamhai. All rights reserved | Technology partner{" "}
                 <a
                   href="https://www.nityom.com/"
                   target="_blank"
