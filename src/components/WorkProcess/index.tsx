@@ -89,7 +89,7 @@ const WorkProcess = () => {
       <section id="work-process" className="relative z-10 pt-[110px] bg-stroke dark:bg-transparent">
         <div className="container">
           <div
-            className="wow animate-fadeInUp mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]"
+            className="wow fadeInUp mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]"
             data-wow-delay=".2s"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
@@ -109,7 +109,7 @@ const WorkProcess = () => {
               {workProcessData.map((item, index) => (
                 <div key={index} className="w-full px-4 md:w-1/2 lg:w-1/3">
                   <div
-                    className="wow animate-fadeInUp group mx-auto mb-[60px] max-w-[310px] text-center"
+                    className="wow fadeInUp group mx-auto mb-[60px] max-w-[310px] text-center"
                     data-wow-delay=".2s"
                   >
                     <div className="mx-auto mb-8 flex h-[90px] w-[90px] items-center justify-center rounded-3xl bg-gray text-primary duration-300 group-hover:bg-primary group-hover:text-white dark:bg-[#2A2E44] dark:text-white dark:group-hover:bg-primary">

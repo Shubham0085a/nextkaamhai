@@ -187,7 +187,7 @@ const Features = () => {
               {featuresData.map((item, index) => (
                 <div key={index} className="w-full px-4 md:w-1/2 lg:w-1/3">
                   <div
-                    className="wow animate-fadeInUp group mx-auto mb-[60px] max-w-[310px] text-center"
+                    className="wow fadeInUp group mx-auto mb-[60px] max-w-[310px] text-center"
                     data-wow-delay=".2s"
                   >
                     <div className="mx-auto mb-8 flex h-[90px] w-[90px] items-center justify-center rounded-3xl bg-gray text-primary duration-300 group-hover:bg-primary group-hover:text-white dark:bg-[#2A2E44] dark:text-white dark:group-hover:bg-primary">

@@ -88,7 +88,10 @@ const Footer = () => {
         <div className="bg-[#F8FAFB] pb-[46px] pt-[95px] dark:bg-dark">
           <div className="container max-w-[1390px]">
             <div className="-mx-4 flex flex-wrap">
-              <div className="w-full px-4 lg:w-4/12 xl:w-3/12">
+              <div
+                className="wow fadeInUp w-full px-4 lg:w-4/12 xl:w-3/12"
+                data-wow-delay=".3s"
+              >
                 <div className="mb-8 max-w-[320px]">
                   <Link href="/" className="mb-8 inline-block">
                     <Image
@@ -127,7 +130,10 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="w-full px-4 lg:w-8/12 xl:w-6/12">
+              <div
+                className="wow fadeInUp w-full px-4 lg:w-8/12 xl:w-6/12"
+                data-wow-delay=".3s"
+              >
                 <div className="-mx-4 flex flex-wrap">
                   {footerNavData.map((group, groupIndex) => (
                     <div
@@ -157,7 +163,10 @@ const Footer = () => {
                   ))}
                 </div>
               </div>
-              <div className="w-full px-4 lg:w-4/12 xl:w-3/12">
+              <div
+                className="wow fadeInUp w-full px-4 lg:w-4/12 xl:w-3/12"
+                data-wow-delay=".3s"
+              >
                 <div className="max-w-[320px]">
                   <h1 className="mb-8 font-medium text-[22px] text-black dark:text-white">
                     Help & Support

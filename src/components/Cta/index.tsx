@@ -16,7 +16,7 @@ const Cta = () => {
             <div className="-mx-4 flex flex-wrap">
               <div className="w-full self-center px-4 lg:w-1/2">
                 <div
-                  className="wow animate-fadeInUp mx-auto max-w-[530px] text-center lg:ml-0 lg:text-left"
+                  className="wow fadeInUp mx-auto max-w-[530px] text-center lg:ml-0 lg:text-left"
                   data-wow-delay=".2s"
                 >
                   <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[38px] md:leading-tight">
@@ -119,7 +119,7 @@ const Cta = () => {
 
               <div className="w-full px-4 lg:w-1/2">
                 <div
-                  className="wow animate-fadeInUp relative z-10 mx-auto mt-20 max-w-[435px] lg:mt-0"
+                  className="wow fadeInUp relative z-10 mx-auto mt-20 max-w-[435px] lg:mt-0"
                   data-wow-delay=".3s"
                 >
                   <Image

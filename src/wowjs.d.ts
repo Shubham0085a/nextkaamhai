@@ -1,11 +1,6 @@
 declare module 'wow.js' {
-    export class WOW {
-      constructor(options?: WOW.WOWOptions);
-      init(): void;
-    }
-    
-    namespace WOW {
-      interface WOWOptions {
+    export default class WOW {
+      constructor(options?: {
         boxClass?: string;
         animateClass?: string;
         offset?: number;
@@ -14,7 +9,8 @@ declare module 'wow.js' {
         callback?: (box: HTMLElement) => void;
         scrollContainer?: string | null;
         resetAnimation?: boolean;
-      }
+      });
+      init(): void;
     }
   }
   

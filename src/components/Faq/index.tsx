@@ -20,7 +20,7 @@ const Faq = () => {
       >
         <div className="container">
           <div
-            className="wow animate-fadeInUp mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]"
+            className="wow fadeInUp mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]"
             data-wow-delay=".2s"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
@@ -34,7 +34,7 @@ const Faq = () => {
           </div>
 
           <div
-            className="faqs wow animate-fadeInUp mx-auto w-full max-w-[785px] rounded-lg bg-white px-6 py-[6px] shadow-card dark:bg-black dark:shadow-card-dark"
+            className="faqs wow fadeInUp mx-auto w-full max-w-[785px] rounded-lg bg-white px-6 py-[6px] shadow-card dark:bg-black dark:shadow-card-dark"
             data-wow-delay=".3s"
           >
             {faqData.map((faq, index) => (
