@@ -1,13 +1,25 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import FsLightbox from "fslightbox-react";
 import screenPhone from "@/../public/images/Screen Phone.png";
+import 'animate.css/animate.min.css';
+import WOW from 'wow.js';
 
 const HeroArea = () => {
   const [toggler, setToggler] = useState(false);
+  useEffect(() => {
+    const wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 50,
+      mobile: true,
+      live: false          
+    });
+    wow.init();
+  }, []);
 
   return (
     <>
@@ -16,7 +28,7 @@ const HeroArea = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-7/12">
               <div
-                className="wow animate-fadeInUp mb-12 lg:mb-0 lg:max-w-[570px]"
+                className="wow fadeInUp mb-12 lg:mb-0 lg:max-w-[570px]"
                 data-wow-delay=".3s"
               >
                 <h1 className="mb-6 text-3xl font-bold leading-tight text-black dark:text-white sm:text-[40px] md:text-[50px] lg:text-[42px] xl:text-[50px]">
@@ -153,7 +165,7 @@ const HeroArea = () => {
 
             <div className="w-full px-4 lg:w-5/12">
               <div
-                className="wow animate-fadeInUp relative z-10 mx-auto w-full max-w-[530px] pt-8 lg:mr-0"
+                className="wow fadeInUp relative z-10 mx-auto w-full max-w-[530px] pt-8 lg:mr-0"
                 data-wow-delay=".3s"
               >
                 <Image
