@@ -13,9 +13,7 @@ const Contact = () => {
               Let&apos;s Stay <span className="inline bg-gradient-4 bg-clip-text text-transparent">Connected</span>
             </h2>
             <p className="text-base text-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+            Stay Connected & Stay Closer with KaamHai!
             </p>
           </div>
         </div>

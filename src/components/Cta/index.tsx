@@ -23,9 +23,7 @@ const Cta = () => {
                     Download Kaamhai Now & Get started for free.
                   </h2>
                   <p className="mb-10 text-base text-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam lacus risus, molestie id condimentum ut, semper
-                    vitae.
+                  Download the app to post unlimited job posts, apply to multiple positions, and pay only after experiencing the effectiveness of our solutions.
                   </p>
 
                   <div className="-mx-[10px] flex flex-wrap items-center justify-center lg:justify-start">

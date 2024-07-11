@@ -9,28 +9,28 @@ import ellipse4 from '@/../public/images/Ellipse 4.png';
 const testimonialData: Testimonial[] = [
   {
     quote:
-      "Lorem ipsum dolor sit amet, consect adipiscing elit. Pellentesque dignissim nisi a odio laoreet luctus. Ut sed diam, quis bibendum ex.",
+      "“The most important thing we liked about this app is that not only does it give you a solid verified database of candidates, but we can also see their skills and work history with previous management feedback. That’s awesome because we don’t need to waste any more time and money over fake skills commitments.”",
     authorImage: ellipse1,
-    authorName: "Joseph",
-    authorRole: "Owner of Kaf Burgers",
+    authorName: "Joseph Fabin",
+    authorRole: "CEO of KAFS Burgers",
   },
   {
     quote:
-      "Lorem ipsum dolor sit amet, consect adipiscing elit. Pellentesque dignissim nisi a odio laoreet luctus. Ut sed diam, quis bibendum ex.",
+      "“Having a platform specifically designed for unorganized sector business owners is an awesome initiative. The fact that we get identification-verified candidates and can easily keep and maintain their records makes things so much easier. Thank you, KaamHai, and I wish you all the very best!”",
     authorImage: ellipse2,
-    authorName: "Joseph",
-    authorRole: "Owner of Pallaram",
+    authorName: "Rashid",
+    authorRole: "Managing Director of Khoys Biryani",
   },
   {
     quote:
-      "Lorem ipsum dolor sit amet, consect adipiscing elit. Pellentesque dignissim nisi a odio laoreet luctus. Ut sed diam, quis bibendum ex.",
+      "“This app is the need of the hour for micro and small business owners. We used to spend a lot of time dealing with workforce-related issues, mainly because there was no system or process to manage them. KaamHai is bringing a much-needed process and benchmark with very simplified steps for businesses like ours, and this will support us in a big way. Thank you, and keep going!”",
     authorImage: ellipse4,
     authorName: "Devid Miller",
     authorRole: "App Developer",
   },
   {
     quote:
-      "Lorem ipsum dolor sit amet, consect adipiscing elit. Pellentesque dignissim nisi a odio laoreet luctus. Ut sed diam, quis bibendum ex.",
+      "“We started using KaamHai as soon as it was introduced. It’s the one solution we wish we had for years. Previously, employees could join with minimal documentation and leave whenever they wanted, causing significant disruption. KaamHai not only professionalizes hiring but also helps us manage our workforce with features like payment tracking and leave management. It also simplifies the process of relieving employees with a notice period, allowing us to prepare and protect our business. Thank you.”",
     authorImage: ellipse3,
     authorName: "Justina Farnandes",
     authorRole: "Seo Expert",
@@ -49,9 +49,7 @@ const Testimonials = () => {
             What <span className="inline bg-gradient-4 bg-clip-text text-transparent">Client&apos;s</span> Say
           </h2>
           <p className="text-base text-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.
+          Discover why clients trust KaamHai to streamline their hiring and workforce management. Read firsthand accounts from business owners who have experienced our platform’s transformative impact. Join our community and set a benchmark for others to follow.
           </p>
         </div>
       </div>

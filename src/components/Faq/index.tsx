@@ -27,9 +27,7 @@ const Faq = () => {
               Frequently Asked <span className="inline bg-gradient-4 bg-clip-text text-transparent">Questions</span>
             </h2>
             <p className="text-base text-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+            Got Questions? We&apos;ve Got You Covered
             </p>
           </div>
 

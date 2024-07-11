@@ -32,7 +32,7 @@ const HeroArea = () => {
                 data-wow-delay=".3s"
               >
                 <h1 className="mb-6 text-3xl font-bold leading-tight text-black dark:text-white sm:text-[40px] md:text-[50px] lg:text-[42px] xl:text-[50px]">
-                  Simplified workforce hiring &
+                  Simplified <span className="inline bg-gradient-4 bg-clip-text text-transparent">Workforce Hiring</span> &
                   <span className="inline bg-gradient-4 bg-clip-text text-transparent">
                     {" "}
                     Management{" "}
@@ -40,11 +40,43 @@ const HeroArea = () => {
                   solution.
                 </h1>
                 <p className="mb-10 max-w-[475px] text-base leading-relaxed text-body">
-                  Upgrade your hiring process with Kaamhai, Designed with
-                  verified databases
+                  Upgrade your hiring process with Kaamhai<br/> Designed with
+                  Verified Databases
                 </p>
 
                 <div className="flex flex-wrap items-center">
+                  <Link
+                    href="https://play.google.com/store/apps/details?id=com.kaamhai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mb-6 mr-6 inline-flex h-[60px] items-center rounded-lg bg-black px-[30px] py-[14px] text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-opacity-90"
+                  >
+                    <span className="mr-[18px] border-r border-stroke border-opacity-40 pr-[18px] leading-relaxed dark:border-[#BDBDBD]">
+                      Download Now
+                    </span>
+                    <span>
+                      <div className="h-8 w-8">
+                        <svg
+                          width="100%"
+                          height="100%"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4 28.9958V4.9125C4 4.07667 4.48167 3.34 5.19 3L19.1442 16.9542L5.19 30.9083C4.48167 30.5542 4 29.8317 4 28.9958ZM23.5642 21.3742L8.32083 30.1858L20.3483 18.1583L23.5642 21.3742ZM28.31 15.2683C28.7917 15.6508 29.1458 16.2458 29.1458 16.9542C29.1458 17.6625 28.8342 18.2292 28.3383 18.6258L25.0942 20.4958L21.5525 16.9542L25.0942 13.4125L28.31 15.2683ZM8.32083 3.7225L23.5642 12.5342L20.3483 15.75L8.32083 3.7225Z"
+                            fill="currentColor"
+                          />
+                          <defs>
+                            <clipPath id="clip0_3_3641">
+                              <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </div>
+                    </span>
+                  </Link>
+
                   <Link
                     href="https://www.apple.com/app-store/"
                     target="_blank"
@@ -93,38 +125,6 @@ const HeroArea = () => {
                           </clipPath>
                         </defs>
                       </svg>
-                    </span>
-                  </Link>
-
-                  <Link
-                    href="https://play.google.com/store/apps/details?id=com.kaamhai"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mb-6 mr-6 inline-flex h-[60px] items-center rounded-lg bg-black px-[30px] py-[14px] text-white hover:bg-opacity-90 dark:bg-white dark:text-black dark:hover:bg-opacity-90"
-                  >
-                    <span className="mr-[18px] border-r border-stroke border-opacity-40 pr-[18px] leading-relaxed dark:border-[#BDBDBD]">
-                      Download Now
-                    </span>
-                    <span>
-                      <div className="h-8 w-8">
-                        <svg
-                          width="100%"
-                          height="100%"
-                          viewBox="0 0 32 32"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M4 28.9958V4.9125C4 4.07667 4.48167 3.34 5.19 3L19.1442 16.9542L5.19 30.9083C4.48167 30.5542 4 29.8317 4 28.9958ZM23.5642 21.3742L8.32083 30.1858L20.3483 18.1583L23.5642 21.3742ZM28.31 15.2683C28.7917 15.6508 29.1458 16.2458 29.1458 16.9542C29.1458 17.6625 28.8342 18.2292 28.3383 18.6258L25.0942 20.4958L21.5525 16.9542L25.0942 13.4125L28.31 15.2683ZM8.32083 3.7225L23.5642 12.5342L20.3483 15.75L8.32083 3.7225Z"
-                            fill="currentColor"
-                          />
-                          <defs>
-                            <clipPath id="clip0_3_3641">
-                              <rect width="24" height="24" fill="white" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </div>
                     </span>
                   </Link>
 

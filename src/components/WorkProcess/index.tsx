@@ -27,7 +27,7 @@ const workProcessData: Feature[] = [
     ),
     title: "Install the App",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Download the app and leverage our workforce management solutions.",
   },
   {
     icon: (
@@ -53,7 +53,7 @@ const workProcessData: Feature[] = [
     ),
     title: "Setup your profile",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Create your profile and let's make it official!",
   },
   {
     icon: (
@@ -79,7 +79,7 @@ const workProcessData: Feature[] = [
     ),
     title: "Get Verified/Hired",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Get your profile verified and get hired through our simplified process!",
   },
 ];
 
@@ -96,9 +96,7 @@ const WorkProcess = () => {
               How it <span className="inline bg-gradient-4 bg-clip-text text-transparent">Works?</span>
             </h2>
             <p className="text-base text-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+              Let’s set a benchmark process for streamlining hiring with simplified steps.
             </p>
           </div>
         </div>

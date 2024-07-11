@@ -96,7 +96,7 @@ const About = () => {
                   data-wow-delay=".3s"
                 >
                   <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-                  Employee in your <span className="inline bg-gradient-4 bg-clip-text text-transparent">safe  hands</span>
+                  Employee in your<br/> <span className="inline bg-gradient-4 bg-clip-text text-transparent">Safe  Hands</span>
                   </h2>
                   <p className="mb-[30px] text-base leading-relaxed text-body">
                   Once hired, employee profiles be come hidden from public searches; you&apos;ll be notified if they start job hunting, allowing you to address concerns, manage departures smoothly with proper notice periods, and provide constructive feedback for future reference.
@@ -124,11 +124,11 @@ const About = () => {
                   Legitimate <span className="inline bg-gradient-4 bg-clip-text text-transparent">Job Opportunities</span> at Your Fingertips
                   </h2>
                   <ul className="mb-[30px] text-base leading-relaxed ml-5 list-disc text-body">
-                    <li>Verified Jobs</li>
-                    <li>Direct Communication</li>
-                    <li>Professional Career record and Showcase Skills</li>
-                    <li>Job Security and Fair Pay</li>
-                    <li>Career Growth</li>
+                    <li>Access legitimate job listings tailored to your skills and preferences.</li>
+                    <li>Contact employers directly through the app.</li>
+                    <li>Create a professional profile highlighting your experience.</li>
+                    <li>Receive timely payments and monthly payslips.</li>
+                    <li>Explore diverse job opportunities for advancement.</li>
                   </ul>
 
                   <Link

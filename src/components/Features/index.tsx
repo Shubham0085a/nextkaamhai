@@ -173,7 +173,7 @@ const featuresData: Feature[] = [
     ),
     title: "WorkForce Management",
     description:
-      "Efficiently manage leave, payment tracking, payslips, ID records, feedback etc",
+      "Efficiently manage leave, payment tracking, payslips, ID records and many more.",
   },
 ];
 
