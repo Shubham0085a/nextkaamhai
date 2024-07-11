@@ -92,8 +92,8 @@ const Footer = () => {
                 className="wow fadeInUp w-full px-4 lg:w-4/12 xl:w-3/12"
                 data-wow-delay=".3s"
               >
-                <div className="mb-8 max-w-[320px]">
-                  <Link href="/" className="mb-8 inline-block">
+                <div className="mb-5 max-w-[320px]">
+                  <Link href="/" className="mb-2 -ml-5 inline-block">
                     <Image
                       width={173}
                       height={34}
@@ -142,7 +142,7 @@ const Footer = () => {
                       className={`w-full px-4 sm:w-1/2 md:w-6/12 lg:w-6/12 ${groupIndex === 0 ? "md:w-6/12 lg:w-6/12" : groupIndex === 3 ? "md:w-6/12 lg:w-6/12" : "md:w-6/12 lg:w-6/12"}`}
                     >
                       <div className="mb-11">
-                        <h3 className="mb-8 text-[22px] font-medium text-black dark:text-white">
+                        <h3 className="mb-4 text-[22px] font-medium text-black dark:text-white">
                           {group.title}
                         </h3>
 
@@ -169,7 +169,7 @@ const Footer = () => {
                 data-wow-delay=".3s"
               >
                 <div className="max-w-[320px]">
-                  <h1 className="mb-8 font-medium text-[22px] text-black dark:text-white">
+                  <h1 className="mb-4 font-medium text-[22px] text-black dark:text-white">
                     Help & Support
                   </h1>
                   <div className="flex flex-col space-y-2">

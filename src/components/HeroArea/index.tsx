@@ -32,12 +32,12 @@ const HeroArea = () => {
                 data-wow-delay=".3s"
               >
                 <h1 className="mb-6 text-3xl font-bold leading-tight text-black dark:text-white sm:text-[40px] md:text-[50px] lg:text-[42px] xl:text-[50px]">
-                  Simplified <span className="inline bg-gradient-4 bg-clip-text text-transparent">Workforce Hiring</span> &
+                  Simplified Workforce <span className="inline bg-gradient-4 bg-clip-text text-transparent">Hiring</span> &
                   <span className="inline bg-gradient-4 bg-clip-text text-transparent">
                     {" "}
-                    Management{" "}
+                    Management Solution
                   </span>
-                  solution.
+                  .
                 </h1>
                 <p className="mb-10 max-w-[475px] text-base leading-relaxed text-body">
                   Upgrade your hiring process with Kaamhai<br/> Designed with
@@ -176,7 +176,7 @@ const HeroArea = () => {
                   className="mx-auto max-w-full"
                 />
                 <div className="max-auto absolute left-0 right-0 top-0 -z-10 aspect-square w-full rounded-full bg-gradient-1">
-                  <div className="absolute right-0 top-5">
+                  <div className="absolute left-52 bottom-56 animate-imageRotate">
                     <svg
                       width="72"
                       height="51"

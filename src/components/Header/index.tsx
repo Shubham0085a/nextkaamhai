@@ -27,6 +27,24 @@ const menuData: Menu[] = [
     label: "Support",
     route: "/#support",
   },
+  {
+    label: "Pages",
+    route: "#",
+    children: [
+      {
+        label: "Blog",
+        route: "/blog",
+      },
+      {
+        label: "Download for Android",
+        route: "https://play.google.com/store/apps/details?id=com.kaamhai",
+      },
+      {
+        label: "Download for Iphone",
+        route: "https://www.apple.com/app-store/",
+      },
+    ],
+  },
 ];
 
 const Header = () => {
