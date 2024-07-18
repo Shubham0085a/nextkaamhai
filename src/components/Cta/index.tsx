@@ -2,7 +2,8 @@ import React from "react";
 import Graphics from "@/components/Cta/Graphics";
 import Image from "next/image";
 import Link from "next/link";
-import screenPhone from "@/../public/images/kaamhai.png";
+import kaamhai from "@/../public/images/kaamhai.png";
+import whitekaamhai from "@/../public/images/white-kaamhai.png";
 
 const Cta = () => {
   return (
@@ -121,15 +122,24 @@ const Cta = () => {
                   data-wow-delay=".3s"
                 >
                   <Image
-                    width={299}
-                    height={419}
-                    src={screenPhone}
+                    width={400}
+                    src={whitekaamhai}
                     alt="cta image"
-                    className="mx-auto max-w-full rounded-3xl"
+                    className="mx-auto max-w-full rounded-3xl block dark:hidden"
+                    priority
+                    style={{ width: "auto", height: "auto" }}
+                  />
+                  <Image
+                    width={400}
+                    src={kaamhai}
+                    alt="cta image"
+                    className="mx-auto max-w-full rounded-3xl hidden dark:block"
+                    priority
+                    style={{ width: "auto", height: "auto" }}
                   />
 
                   <div className="absolute -top-5 left-0 right-0 -z-10 aspect-square w-full rounded-full bg-gradient-2"></div>
-                  <div className="absolute right-0 top-0 -z-10">
+                  <div className="absolute right-0 top-0 -z-10 animate-pulse">
                     <svg
                       width="60"
                       height="43"

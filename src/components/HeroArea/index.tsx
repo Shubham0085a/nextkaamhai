@@ -176,7 +176,7 @@ const HeroArea = () => {
                   className="mx-auto max-w-full"
                 />
                 <div className="max-auto absolute left-0 right-0 top-0 -z-10 aspect-square w-full rounded-full bg-gradient-1">
-                  <div className="absolute left-52 bottom-56 animate-imageRotate">
+                  <div className="absolute right-0 top-5 animate-pulse">
                     <svg
                       width="72"
                       height="51"

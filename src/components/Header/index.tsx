@@ -8,7 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import DarkModeSwitcher from "@/components/Header/DarkModeSwitcher";
 import logoblack from "@/../public/images/black-logo.png"
-import logo from "@/../public/images/logo.svg"
+import whitelogo from "@/../public/images/white-logo.png"
 
 const menuData: Menu[] = [
   {
@@ -28,7 +28,7 @@ const menuData: Menu[] = [
     route: "/#support",
   },
   {
-    label: "Pages",
+    label: "More",
     route: "#",
     children: [
       {
@@ -121,7 +121,7 @@ const Header = () => {
                 <Image
                   width={173}
                   height={34}
-                  src={logo}
+                  src={whitelogo}
                   alt="Logo"
                   priority
                   className="hidden dark:block"

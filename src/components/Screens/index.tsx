@@ -29,9 +29,7 @@ const Screens = () => {
               <span className="inline bg-gradient-4 bg-clip-text text-transparent">App</span> Screenshots
             </h2>
             <p className="text-base text-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+            Experience an exclusive preview of our solutions;<br/> Download now to explore!
             </p>
           </div>
         </div>

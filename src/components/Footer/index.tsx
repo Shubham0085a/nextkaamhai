@@ -4,7 +4,7 @@ import Image from "next/image";
 import FooterBottom from "@/components/Footer/FooterBottom";
 import { FooterMenu } from "@/types/footerMenu";
 import logoBlack from "@/../public/images/black-logo.png";
-import logo from "@/../public/images/logo.svg";
+import whitelogo from "@/../public/images/white-logo.png"
 
 const footerNavData: FooterMenu[] = [
   // {
@@ -93,7 +93,8 @@ const Footer = () => {
                 data-wow-delay=".3s"
               >
                 <div className="mb-5 max-w-[320px]">
-                  <Link href="/" className="mb-2 -ml-5 inline-block">
+                  <div className="flex flex-row items-center">
+                  <Link href="/" className="mb-2 -ml-4 inline-block">
                     <Image
                       width={173}
                       height={34}
@@ -106,13 +107,16 @@ const Footer = () => {
                     <Image
                       width={173}
                       height={34}
-                      src={logo}
+                      src={whitelogo}
                       alt="Logo"
                       priority
                       className="hidden max-w-full dark:block"
                       style={{ width: "auto", height: "auto" }}
                     />
                   </Link>
+                    <p className="text-black dark:text-white font-bold text-5xl -ml-2">&trade;</p>
+
+                  </div>
                   <p className="text-base font-bold text-body">Get Ready to Set A  Benchmark With Us</p>
                   <p className="text-base text-body">
                     Simplified workforce hiring & Management solution.

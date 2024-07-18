@@ -18,14 +18,13 @@ const About = () => {
                   data-wow-delay=".2s"
                 >
                   <Image
-                    width={294}
-                    height={594}
+                    width={400}
                     src={rightScreen}
                     alt="about image"
                     className="mx-auto max-w-full"
                   />
 
-                  <div className="absolute right-5 top-0 -z-10">
+                  <div className="absolute right-5 top-0 -z-10 animate-pulse">
                     <svg
                       width="72"
                       height="50"
@@ -146,14 +145,13 @@ const About = () => {
                   data-wow-delay=".3s"
                 >
                   <Image
-                    width={294}
-                    height={594}
+                    width={400}
                     src={leftScreen}
                     alt="about image"
                     className="mx-auto max-w-full"
                   />
 
-                  <div className="absolute right-5 top-0 -z-10">
+                  <div className="absolute right-5 top-0 -z-10 animate-pulse">
                     <svg
                       width="72"
                       height="50"

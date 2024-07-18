@@ -68,13 +68,13 @@ const config: Config = {
         "card-dark": "0px 1px 5px rgba(16, 25, 55, 0.14)",
       },
       keyframes: {
-        imageRotate: {
-          '0%': { transform: 'rotate(0deg) translateX(-215px) translateY(-215px) rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg) translateX(-215px) translateY(-215px) rotate(-360deg)' },
+        pulses: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '.5' },
         },
       },
       animation: {
-        imageRotate: 'imageRotate 17s linear infinite',
+        pulses: 'pulses 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
     },
   },
