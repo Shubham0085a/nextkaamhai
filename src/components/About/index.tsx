@@ -103,7 +103,7 @@ const About = () => {
 
                   <Link
                     href="#"
-                    className="inline-block rounded-md bg-primary px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90"
+                    className="inline-block rounded-md bg-primary px-8 py-[10px] text-base font-medium text-black hover:bg-opacity-90"
                   >
                     Hire Now
                   </Link>
@@ -132,7 +132,7 @@ const About = () => {
 
                   <Link
                     href="#"
-                    className="inline-block rounded-md bg-primary px-8 py-[10px] text-base font-medium text-white hover:bg-opacity-90"
+                    className="inline-block rounded-md bg-primary px-8 py-[10px] text-base font-medium text-black hover:bg-opacity-90"
                   >
                     Find Your Job Now
                   </Link>

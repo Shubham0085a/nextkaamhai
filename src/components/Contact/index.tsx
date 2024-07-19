@@ -93,7 +93,7 @@ const Contact = () => {
                     </p>
                     <button
                       type="submit"
-                      className="inline-block rounded-md bg-primary px-11 py-[14px] text-base font-medium text-white hover:bg-opacity-90"
+                      className="inline-block rounded-md bg-primary px-11 py-[14px] text-base font-medium text-black hover:bg-opacity-90"
                     >
                       Contact Us
                     </button>

@@ -8,7 +8,7 @@ const FooterBottom = () => {
         <div className="container max-w-[1390px]">
           <div className="-mx-3 flex flex-wrap">
             <div className="w-full px-3">
-              <p className=" text-center text-base text-white">
+              <p className=" text-center text-base text-black dark:text-white">
                 © 2024 Kaamhai. All rights reserved | Technology partner{" "}
                 <a
                   href="https://www.nityom.com/"

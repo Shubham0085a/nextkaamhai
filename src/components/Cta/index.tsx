@@ -33,7 +33,7 @@ const Cta = () => {
                         href="https://play.google.com/store/apps/details?id=com.kaamhai"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="mb-5 inline-flex items-center rounded-md bg-primary py-[10px] pl-4 pr-5 text-white hover:bg-opacity-90"
+                        className="mb-5 inline-flex items-center rounded-md bg-primary py-[10px] pl-4 pr-5 text-black hover:bg-opacity-90"
                       >
                         <span className="mr-[10px]">
                           <svg
