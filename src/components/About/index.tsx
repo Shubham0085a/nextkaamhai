@@ -120,7 +120,7 @@ const About = () => {
                   data-wow-delay=".2s"
                 >
                   <h2 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight">
-                  Legitimate <span className="inline bg-gradient-4 bg-clip-text text-transparent">Job Opportunities</span> at Your Fingertips
+                  Legitimate<br/> <span className="inline bg-gradient-4 bg-clip-text text-transparent">Job Opportunities</span><br/> at Your Fingertips
                   </h2>
                   <ul className="mb-[30px] text-base leading-relaxed ml-5 list-disc text-body">
                     <li>Access legitimate job listings tailored to your skills and preferences.</li>

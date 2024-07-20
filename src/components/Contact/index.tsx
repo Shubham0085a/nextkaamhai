@@ -43,7 +43,7 @@ const Contact = () => {
                       type="text"
                       name="company"
                       id="company"
-                      placeholder="Comapy (optioanl)"
+                      placeholder="Company (optioanl)"
                       className="w-full rounded border border-stroke bg-white px-[30px] py-4 text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-secondary dark:focus:border-primary"
                     />
                   </div>

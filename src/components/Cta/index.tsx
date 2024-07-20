@@ -24,7 +24,9 @@ const Cta = () => {
                     Download Kaamhai Now & Get started for free.
                   </h2>
                   <p className="mb-10 text-base text-body">
-                  Download the app to post unlimited job posts, apply to multiple positions, and pay only after experiencing the effectiveness of our solutions.
+                    Download the app to post unlimited job posts, apply to
+                    multiple positions, and pay only after experiencing the
+                    effectiveness of our solutions.
                   </p>
 
                   <div className="-mx-[10px] flex flex-wrap items-center justify-center lg:justify-start">
@@ -122,7 +124,7 @@ const Cta = () => {
                   data-wow-delay=".3s"
                 >
                   <Image
-                    width={400}
+                    width={150}
                     src={whitekaamhai}
                     alt="cta image"
                     className="mx-auto max-w-full rounded-3xl block dark:hidden"
@@ -130,7 +132,7 @@ const Cta = () => {
                     style={{ width: "auto", height: "auto" }}
                   />
                   <Image
-                    width={400}
+                    width={200}
                     src={kaamhai}
                     alt="cta image"
                     className="mx-auto max-w-full rounded-3xl hidden dark:block"

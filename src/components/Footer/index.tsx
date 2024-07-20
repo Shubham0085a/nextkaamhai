@@ -7,27 +7,6 @@ import logoBlack from "@/../public/images/black-logo.png";
 import whitelogo from "@/../public/images/white-logo.png"
 
 const footerNavData: FooterMenu[] = [
-  // {
-  //   title: "Home",
-  //   navItems: [
-  //     {
-  //       label: "Product",
-  //       route: "#",
-  //     },
-  //     {
-  //       label: "Pricing",
-  //       route: "#",
-  //     },
-  //     {
-  //       label: "Business",
-  //       route: "#",
-  //     },
-  //     {
-  //       label: "Enterprise",
-  //       route: "#",
-  //     },
-  //   ],
-  // },
   {
     title: "Resource",
     navItems: [
@@ -66,19 +45,6 @@ const footerNavData: FooterMenu[] = [
       },
     ],
   },
-  // {
-  //   title: "Help & Support",
-  //   navItems: [
-  //     {
-  //       label: "FAQs",
-  //       route: "/#faq",
-  //     },
-  //     {
-  //       label: "Email: info@kaamhai.in",
-  //       route: "mailto:info@kaamhai.in",
-  //     },
-  //   ],
-  // },
 ];
 
 const Footer = () => {
@@ -117,7 +83,7 @@ const Footer = () => {
                     <p className="text-black dark:text-white font-bold text-5xl -ml-2">&trade;</p>
 
                   </div>
-                  <p className="text-base font-bold text-body">Get Ready to Set A  Benchmark With Us</p>
+                  <p className="text-xl font-extrabold text-body">Get Ready to Set A<br/>  Benchmark With Us</p>
                   <p className="text-base text-body">
                     Simplified workforce hiring & Management solution.
                   </p>

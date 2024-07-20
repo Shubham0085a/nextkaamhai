@@ -125,31 +125,6 @@ const Screens = () => {
                   <Image
                     width={265}
                     height={573}
-                    src={dashbordImg}
-                    alt="screenshot"
-                    className="mx-auto w-full rounded-[2.5rem]"
-                  />
-                </div>
-              </SwiperSlide>
-
-
-              <SwiperSlide>
-                <div className="mx-auto w-full max-w-[252px] overflow-hidden xs:max-w-[265px]">
-                  <Image
-                    width={265}
-                    height={573}
-                    src={homeImg}
-                    alt="screenshot"
-                    className="mx-auto w-full rounded-[2.5rem]"
-                  />
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="mx-auto w-full max-w-[252px] overflow-hidden xs:max-w-[265px]">
-                  <Image
-                    width={265}
-                    height={573}
                     src={applyImg}
                     alt="screenshot"
                     className="mx-auto w-full rounded-[2.5rem]"
