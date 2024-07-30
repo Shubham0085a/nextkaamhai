@@ -67,15 +67,6 @@ const config: Config = {
         card: "0px 1px 5px rgba(45, 74, 170, 0.14)",
         "card-dark": "0px 1px 5px rgba(16, 25, 55, 0.14)",
       },
-      keyframes: {
-        pulses: {
-          '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '.5' },
-        },
-      },
-      animation: {
-        pulses: 'pulses 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-      },
     },
   },
   variants: {

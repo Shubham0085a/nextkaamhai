@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { motion, useAnimation } from "framer-motion";
 import Graphics from "@/components/Cta/Graphics";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,6 +8,31 @@ import kaamhai from "@/../public/images/kaamhai.png";
 import whitekaamhai from "@/../public/images/white-kaamhai.png";
 
 const Cta = () => {
+  const clockwise = useAnimation();
+  const antiClockwise = useAnimation();
+  const [direction, setDirection] = React.useState(1);
+  React.useEffect(() => {
+    clockwise.start({
+      rotate: [null, 360* direction],
+      transition: {
+        duration: 10,
+        repeat: Infinity,
+        ease: "linear"
+      }
+    });
+    
+    antiClockwise.start({
+      rotate: [null, -360* direction],
+      transition: {
+        duration: 10,
+        repeat: Infinity,
+        ease: "linear"
+      }
+    });
+    setTimeout(() => {
+      setDirection(-1 * direction);
+    }, 10000);
+  }, [direction, clockwise, antiClockwise]);
   return (
     <>
       <section
@@ -141,7 +168,7 @@ const Cta = () => {
                   </div>
 
                   <div className="absolute -top-5 left-0 right-0 -z-10 aspect-square w-full rounded-full bg-gradient-2"></div>
-                  <div className="absolute right-0 top-0 -z-10 animate-pulse">
+                  <div className="absolute right-0 top-0 -z-10">
                     <svg
                       width="60"
                       height="43"
@@ -150,11 +177,13 @@ const Cta = () => {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <g clipPath="url(#clip0_47_16)">
-                        <path
+                        <motion.path
+                        animate={clockwise}
                           d="M18.3392 1.12402C18.342 1.06386 18.3451 1.00425 18.3484 0.94519C18.3456 1.00499 18.3425 1.06459 18.3392 1.12402C18.0601 7.2551 21.0899 18.9962 35.5087 18.295C29.6192 18.7078 17.9481 22.8922 18.347 36.3249C18.164 30.4662 14.3716 18.8894 0.685511 18.8251C0.56152 18.827 0.43993 18.8273 0.320892 18.8261C0.443205 18.8249 0.564743 18.8245 0.685511 18.8251C6.49532 18.7353 17.5757 15.1217 18.3392 1.12402Z"
                           fill="#7083F5"
                         />
-                        <path
+                        <motion.path
+                        animate={antiClockwise}
                           d="M48.8789 21.0097C48.8805 20.9735 48.8824 20.9378 48.8844 20.9023C48.8827 20.9382 48.8808 20.974 48.8789 21.0097C48.7114 24.6883 50.5293 31.733 59.1806 31.3122C55.6469 31.5599 48.6442 34.0705 48.8836 42.1302C48.7737 38.615 46.4983 31.6689 38.2867 31.6303C38.2123 31.6315 38.1393 31.6316 38.0679 31.6309C38.1413 31.6301 38.2142 31.6299 38.2867 31.6303C41.7725 31.5764 48.4208 29.4082 48.8789 21.0097Z"
                           fill="#19DEBB"
                         />

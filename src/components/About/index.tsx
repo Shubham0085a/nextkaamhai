@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import Graphics from "@/components/About/Graphics";
 import Link from "next/link";
@@ -6,6 +8,31 @@ import rightScreen from "@/../public/images/Right iPhone X.png"
 import leftScreen from "@/../public/images/Left iPhone X.png"
 
 const About = () => {
+  const clockwise = useAnimation();
+  const antiClockwise = useAnimation();
+  const [direction, setDirection] = React.useState(1);
+  React.useEffect(() => {
+    clockwise.start({
+      rotate: [null, 360* direction],
+      transition: {
+        duration: 10,
+        repeat: Infinity,
+        ease: "linear"
+      }
+    });
+    
+    antiClockwise.start({
+      rotate: [null, -360* direction],
+      transition: {
+        duration: 10,
+        repeat: Infinity,
+        ease: "linear"
+      }
+    });
+    setTimeout(() => {
+      setDirection(-1 * direction);
+    }, 10000);
+  }, [direction, clockwise, antiClockwise]);
   return (
     <>
       <section id="about" className="relative pt-[150px] bg-stroke dark:bg-transparent">
@@ -24,7 +51,7 @@ const About = () => {
                     className="mx-auto max-w-full"
                   />
 
-                  <div className="absolute right-5 top-0 -z-10 animate-pulse">
+                  <div className="absolute right-5 top-0 -z-10">
                     <svg
                       width="72"
                       height="50"
@@ -33,11 +60,13 @@ const About = () => {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <g clipPath="url(#clip0_33_10)">
-                        <path
+                        <motion.path
+                        animate={clockwise}
                           d="M21.8126 0.216481C21.8159 0.143661 21.8196 0.071493 21.8237 0C21.8203 0.0723874 21.8165 0.144547 21.8126 0.216481C21.4747 7.63863 25.1425 21.8522 42.5976 21.0032C35.4678 21.503 21.3391 26.5685 21.822 42.8298C21.6005 35.7375 17.0094 21.7229 0.441399 21.645C0.291298 21.6473 0.144104 21.6477 0 21.6462C0.148069 21.6447 0.2952 21.6443 0.441399 21.645C7.47462 21.5363 20.8883 17.1617 21.8126 0.216481Z"
                           fill="#7083F5"
                         />
-                        <path
+                        <motion.path
+                        animate={antiClockwise}
                           d="M58.7832 24.2896C58.7851 24.2459 58.7874 24.2025 58.7898 24.1597C58.7878 24.2031 58.7855 24.2464 58.7832 24.2896C58.5804 28.7428 60.7811 37.271 71.2541 36.7616C66.9763 37.0614 58.499 40.1008 58.7888 49.8576C58.6559 45.6022 55.9013 37.1934 45.9605 37.1467C45.8704 37.1481 45.782 37.1482 45.6956 37.1474C45.7844 37.1465 45.8727 37.1462 45.9605 37.1467C50.1803 37.0815 58.2286 34.4567 58.7832 24.2896Z"
                           fill="#7ED8FF"
                         />
@@ -151,7 +180,7 @@ const About = () => {
                     className="mx-auto max-w-full"
                   />
 
-                  <div className="absolute right-5 top-0 -z-10 animate-pulse">
+                  <div className="absolute right-5 top-0 -z-10">
                     <svg
                       width="72"
                       height="50"
@@ -160,11 +189,13 @@ const About = () => {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <g clipPath="url(#clip0_34_10)">
-                        <path
+                        <motion.path
+                        animate={clockwise}
                           d="M21.8126 0.216481C21.8159 0.143661 21.8196 0.071493 21.8237 0C21.8203 0.0723874 21.8165 0.144547 21.8126 0.216481C21.4747 7.63863 25.1425 21.8522 42.5976 21.0032C35.4678 21.503 21.3391 26.5685 21.822 42.8298C21.6005 35.7375 17.0094 21.7229 0.441399 21.645C0.291298 21.6473 0.144104 21.6477 0 21.6462C0.148069 21.6447 0.2952 21.6443 0.441399 21.645C7.47462 21.5363 20.8883 17.1617 21.8126 0.216481Z"
                           fill="#FF9996"
                         />
-                        <path
+                        <motion.path
+                        animate={antiClockwise}
                           d="M58.7832 24.2896C58.7851 24.2459 58.7874 24.2025 58.7898 24.1597C58.7878 24.2031 58.7855 24.2464 58.7832 24.2896C58.5804 28.7428 60.7811 37.271 71.2541 36.7616C66.9763 37.0614 58.499 40.1008 58.7888 49.8576C58.6559 45.6022 55.9013 37.1934 45.9605 37.1467C45.8704 37.1481 45.782 37.1482 45.6956 37.1474C45.7844 37.1465 45.8727 37.1462 45.9605 37.1467C50.1803 37.0815 58.2286 34.4567 58.7832 24.2896Z"
                           fill="#FFCB78"
                         />
