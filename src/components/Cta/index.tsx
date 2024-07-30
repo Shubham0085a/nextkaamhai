@@ -120,11 +120,11 @@ const Cta = () => {
 
               <div className="w-full px-4 lg:w-1/2">
                 <div
-                  className="wow fadeInUp relative z-10 mx-auto mt-20 max-w-[435px] lg:mt-0"
+                  className="wow fadeInUp flex justify-center relative z-10 mx-auto mt-20 max-w-[435px] lg:mt-0"
                   data-wow-delay=".3s"
                 >
+                  <div className="w-52 sm:w-80">
                   <Image
-                    width={150}
                     src={whitekaamhai}
                     alt="cta image"
                     className="mx-auto max-w-full rounded-3xl block dark:hidden"
@@ -132,13 +132,13 @@ const Cta = () => {
                     style={{ width: "auto", height: "auto" }}
                   />
                   <Image
-                    width={200}
                     src={kaamhai}
                     alt="cta image"
                     className="mx-auto max-w-full rounded-3xl hidden dark:block"
                     priority
                     style={{ width: "auto", height: "auto" }}
                   />
+                  </div>
 
                   <div className="absolute -top-5 left-0 right-0 -z-10 aspect-square w-full rounded-full bg-gradient-2"></div>
                   <div className="absolute right-0 top-0 -z-10 animate-pulse">
