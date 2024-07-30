@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Graphics from "@/components/Faq/Graphics";
 import faqData from "./faqData";
 import FAQItem from "./FAQItem";
-import Link from "next/link";
 
 const Faq = () => {
   const [activeFaq, setActiveFaq] = useState(0);
@@ -17,7 +16,7 @@ const Faq = () => {
     <>
       <section
         id="faq"
-        className="relative z-10 bg-[#F8FAFB] py-[110px] dark:bg-dark"
+        className="relative z-10 mt-5 bg-[#F8FAFB] py-[110px] dark:bg-dark"
       >
         <div className="container">
           <div
@@ -45,14 +44,6 @@ const Faq = () => {
                 faqData={{ ...faq, activeFaq, handleFaqToggle }}
               />
             ))}
-          </div>
-          <div className="flex items-center justify-center mt-5">
-          <Link
-            href="/faq"
-            className="inline-block wow fadeInUp rounded-md bg-primary px-8 py-[10px] text-base font-medium text-black hover:bg-opacity-90"
-          >
-            Load More...
-          </Link>
           </div>
         </div>
 
