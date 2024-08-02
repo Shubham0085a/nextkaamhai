@@ -80,8 +80,9 @@ const Footer = () => {
                       style={{ width: "auto", height: "auto" }}
                     />
                   </Link>
-                    <p className="text-black dark:text-white font-bold text-5xl -ml-2">&trade;</p>
-
+                  <div className=" border rounded-full w-3 h-3 flex items-center justify-center -ml-4 -mb-[0.3rem]">
+                    <p className="text-black dark:text-white font-bold text-xs mt-2">&trade;</p>
+                  </div>
                   </div>
                   <p className="text-xl font-extrabold text-body">Get Ready to Set A<br/>  Benchmark With Us</p>
                   <p className="text-base text-body">
