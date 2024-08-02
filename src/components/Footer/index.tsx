@@ -80,7 +80,7 @@ const Footer = () => {
                       style={{ width: "auto", height: "auto" }}
                     />
                   </Link>
-                  <div className=" border rounded-full w-3 h-3 flex items-center justify-center -ml-4 -mb-[0.3rem]">
+                  <div className=" border border-black dark:border-white rounded-full w-3 h-3 flex items-center justify-center -ml-4 -mb-[0.3rem]">
                     <p className="text-black dark:text-white font-bold text-xs mt-2">&trade;</p>
                   </div>
                   </div>
