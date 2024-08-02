@@ -60,7 +60,7 @@ const Footer = () => {
               >
                 <div className="mb-5 max-w-[320px]">
                   <div className="flex flex-row items-center">
-                  <Link href="/" className="mb-2 -ml-4 inline-block">
+                  <Link href="/" className="mb-2 -ml-4 inline-block w-52">
                     <Image
                       width={173}
                       height={34}
@@ -80,7 +80,7 @@ const Footer = () => {
                       style={{ width: "auto", height: "auto" }}
                     />
                   </Link>
-                  <div className=" border border-black dark:border-white rounded-full w-3 h-3 flex items-center justify-center -ml-4 -mb-[0.3rem]">
+                  <div className=" border border-black dark:border-white rounded-full w-3 h-3 flex items-center justify-center -ml-3 -mb-[0.1rem]">
                     <p className="text-black dark:text-white font-bold text-xs mt-2">&trade;</p>
                   </div>
                   </div>
