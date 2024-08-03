@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import FooterBottom from "@/components/Footer/FooterBottom";
 import { FooterMenu } from "@/types/footerMenu";
-import logoBlack from "@/../public/images/black-logo.png";
-import whitelogo from "@/../public/images/white-logo.png"
+import logoBlack from "@/../public/images/black-logotm.png";
+import whitelogo from "@/../public/images/white-logotm.png";
 
 const footerNavData: FooterMenu[] = [
   {
@@ -59,32 +59,34 @@ const Footer = () => {
                 data-wow-delay=".3s"
               >
                 <div className="mb-5 max-w-[320px]">
-                  <div className="flex flex-row items-center">
-                  <Link href="/" className="mb-2 -ml-4 inline-block w-52">
-                    <Image
-                      width={173}
-                      height={34}
-                      src={logoBlack}
-                      alt="Logo"
-                      priority
-                      className="block max-w-full dark:hidden"
-                      style={{ width: "auto", height: "auto" }}
-                    />
-                    <Image
-                      width={173}
-                      height={34}
-                      src={whitelogo}
-                      alt="Logo"
-                      priority
-                      className="hidden max-w-full dark:block"
-                      style={{ width: "auto", height: "auto" }}
-                    />
-                  </Link>
-                  <div className=" border border-black dark:border-white rounded-full w-3 h-3 flex items-center justify-center -ml-3 -mb-[0.1rem]">
+                    <Link href="/" className="mb-1 -ml-2 inline-block w-52">
+                      <Image
+                        width={173}
+                        height={34}
+                        src={logoBlack}
+                        alt="Logo"
+                        priority
+                        className="block max-w-full dark:hidden"
+                        style={{ width: "auto", height: "auto" }}
+                      />
+                      <Image
+                        width={173}
+                        height={34}
+                        src={whitelogo}
+                        alt="Logo"
+                        priority
+                        className="hidden max-w-full dark:block"
+                        style={{ width: "auto", height: "auto" }}
+                      />
+                    </Link>
+                  {/* <div className="flex flex-row items-center">
+                    <div className=" border border-black dark:border-white rounded-full w-3 h-3 flex items-center justify-center -ml-3 -mb-[0.1rem]">
                     <p className="text-black dark:text-white font-bold text-xs mt-2">&trade;</p>
                   </div>
-                  </div>
-                  <p className="text-xl font-extrabold text-body">Get Ready to Set A<br/>  Benchmark With Us</p>
+                  </div> */}
+                  <p className="text-xl font-extrabold text-body">
+                    Get Ready to Set A<br /> Benchmark With Us
+                  </p>
                   <p className="text-base text-body">
                     Simplified workforce hiring & Management solution.
                   </p>

@@ -10,14 +10,14 @@ const testimonialData: Testimonial[] = [
   {
     quote:
       "“The most important thing we liked about this app is that not only does it give you a solid verified database of candidates, but we can also see their skills and work history with previous management feedback. That’s awesome because we don’t need to waste any more time and money over fake skills commitments.”",
-    authorImage: ellipse1,
+    authorImage: ellipse4,
     authorName: "Joseph Fabin",
     authorRole: "CEO of KAFS Burgers",
   },
   {
     quote:
       "“Having a platform specifically designed for unorganized sector business owners is an awesome initiative. The fact that we get identification-verified candidates and can easily keep and maintain their records makes things so much easier. Thank you, KaamHai, and I wish you all the very best!”",
-    authorImage: ellipse2,
+    authorImage: ellipse4,
     authorName: "Rashid",
     authorRole: "Managing Director of Khoys Biryani",
   },
@@ -26,14 +26,14 @@ const testimonialData: Testimonial[] = [
       "“This app is the need of the hour for micro and small business owners. We used to spend a lot of time dealing with workforce-related issues, mainly because there was no system or process to manage them. KaamHai is bringing a much-needed process and benchmark with very simplified steps for businesses like ours, and this will support us in a big way. Thank you, and keep going!”",
     authorImage: ellipse4,
     authorName: "Devid Miller",
-    authorRole: "App Developer",
+    authorRole: "manager",
   },
   {
     quote:
       "“We started using KaamHai as soon as it was introduced. It’s the one solution we wish we had for years. Previously, employees could join with minimal documentation and leave whenever they wanted, causing significant disruption. KaamHai not only professionalizes hiring but also helps us manage our workforce with features like payment tracking and leave management. It also simplifies the process of relieving employees with a notice period, allowing us to prepare and protect our business. Thank you.”",
     authorImage: ellipse3,
     authorName: "Justina Farnandes",
-    authorRole: "Seo Expert",
+    authorRole: "Restaurant Owner",
   },
 ];
 
