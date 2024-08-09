@@ -184,8 +184,6 @@ const Screens = () => {
             </Swiper>
           </div>
         </div>
-
-        {/*Graphics*/}
         <Graphics />
       </section>
     </>

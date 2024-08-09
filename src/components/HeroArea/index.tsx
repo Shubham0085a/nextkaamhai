@@ -182,7 +182,7 @@ const HeroArea = () => {
                   <FsLightbox
                     toggler={toggler}
                     sources={[
-                      "https://www.youtube.com/watch?v=HXHphpDJ9T0&pp=ygULaW50cm8gdmlkZW8%3D",
+                      "https://youtu.be/gDTnUmOBTUE?si=ojrPUQ-Xs0yvi167",
                     ]}
                   />
                 </div>

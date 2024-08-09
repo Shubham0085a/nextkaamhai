@@ -55,7 +55,7 @@ const Footer = () => {
           <div className="container max-w-[1390px]">
             <div className="-mx-4 flex flex-wrap">
               <div
-                className="wow fadeInUp w-full px-4 lg:w-4/12 xl:w-3/12"
+                className="wow fadeInUp w-full px-4 lg:w-4/12 xl:w-[35%]"
                 data-wow-delay=".3s"
               >
                 <div className="mb-5 max-w-[320px]">
@@ -79,16 +79,8 @@ const Footer = () => {
                         style={{ width: "auto", height: "auto" }}
                       />
                     </Link>
-                  {/* <div className="flex flex-row items-center">
-                    <div className=" border border-black dark:border-white rounded-full w-3 h-3 flex items-center justify-center -ml-3 -mb-[0.1rem]">
-                    <p className="text-black dark:text-white font-bold text-xs mt-2">&trade;</p>
-                  </div>
-                  </div> */}
                   <p className="text-xl font-extrabold text-body">
                     Get Ready to Set A<br /> Benchmark With Us
-                  </p>
-                  <p className="text-base text-body">
-                    Simplified workforce hiring & Management solution.
                   </p>
                   <p className="text-base text-body">
                     Powered by{" "}
@@ -105,7 +97,7 @@ const Footer = () => {
               </div>
 
               <div
-                className="wow fadeInUp w-full px-4 lg:w-8/12 xl:w-6/12"
+                className="wow fadeInUp w-full px-4 lg:w-8/12 xl:w-[35%]"
                 data-wow-delay=".3s"
               >
                 <div className="-mx-4 flex flex-wrap">

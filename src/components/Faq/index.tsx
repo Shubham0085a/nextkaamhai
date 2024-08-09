@@ -47,12 +47,12 @@ const Faq = () => {
             ))}
           </div>
           <div className="flex items-center justify-center mt-5">
-          <Link
-            href="/faq"
-            className="inline-block wow fadeInUp rounded-md bg-primary px-8 py-[10px] text-base font-medium text-black hover:bg-opacity-90"
-          >
-            Load More...
-          </Link>
+            <Link
+              href="/faq"
+              className="inline-block wow fadeInUp rounded-md bg-primary px-8 py-[10px] text-base font-medium text-black hover:bg-opacity-90"
+            >
+              Load More...
+            </Link>
           </div>
         </div>
 
