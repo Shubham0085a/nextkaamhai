@@ -10,6 +10,8 @@ import editpen from "@/../public/svgs/editpen.svg";
 import mark from "@/../public/svgs/mark.svg";
 import xmark from "@/../public/svgs/xmark.svg";
 import timer from "@/../public/svgs/timer.svg"
+import nextarrowsmall from "@/../public/svgs/nextarrowsmall.svg"
+import nextarrow from "@/../public/svgs/nextarrow.svg"
 
 const Profile = () => {
   const options = Array.from({ length: 61 }, (_, i) =>
@@ -450,11 +452,19 @@ const Profile = () => {
                 </div>
                 <div className="mt-10 w-[95%] flex justify-center mb-10">
                   <div className="flex flex-row flex-wrap justify-center gap-2">
-                    <div className="text-white w-[45%] min-w-[250px] bg-[#000000] border border-[#000000] inline-flex items-center justify-center py-2 rounded-md">
+                    <div className="text-white w-[45%] min-w-[250px] bg-[#000000] border border-[#000000] inline-flex items-center justify-around py-2 rounded-md">
                       <h1>Get you Insurance </h1>
+                      <div className="inline-flex">
+                      <Image src={nextarrowsmall} alt="next arrow small"/>
+                      <Image src={nextarrow} alt="next arrow"/>
+                      </div>
                     </div>
-                    <div className="text-white w-[45%] min-w-[250px] bg-[#000000] border border-[#000000] inline-flex items-center justify-center py-2 rounded-md">
+                    <div className="text-white w-[45%] min-w-[250px] bg-[#000000] border border-[#000000] inline-flex items-center justify-around py-2 rounded-md">
                       <h1>Get you Insurance </h1>
+                      <div className="inline-flex">
+                      <Image src={nextarrowsmall} alt="next arrow small"/>
+                      <Image src={nextarrow} alt="next arrow"/>
+                      </div>
                     </div>
                   </div>
                 </div>
