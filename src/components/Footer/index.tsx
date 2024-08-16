@@ -53,32 +53,32 @@ const Footer = () => {
       <footer>
         <div className="bg-[#F8FAFB] pb-[46px] pt-[95px] dark:bg-dark">
           <div className="container max-w-[1390px]">
-            <div className="-mx-4 flex flex-wrap">
+            <div className="mx-2 flex flex-wrap justify-between">
               <div
                 className="wow fadeInUp w-full px-4 lg:w-4/12 xl:w-[35%]"
                 data-wow-delay=".3s"
               >
-                <div className="mb-5 max-w-[320px]">
-                    <Link href="/" className="mb-1 -ml-2 inline-block w-52">
-                      <Image
-                        width={173}
-                        height={34}
-                        src={logoBlack}
-                        alt="Logo"
-                        priority
-                        className="block max-w-full dark:hidden"
-                        style={{ width: "auto", height: "auto" }}
-                      />
-                      <Image
-                        width={173}
-                        height={34}
-                        src={whitelogo}
-                        alt="Logo"
-                        priority
-                        className="hidden max-w-full dark:block"
-                        style={{ width: "auto", height: "auto" }}
-                      />
-                    </Link>
+                <div className="mb-5 space-y-2 max-w-[320px]">
+                  <Link href="/" className="-ml-2 inline-block w-52">
+                    <Image
+                      width={173}
+                      height={34}
+                      src={logoBlack}
+                      alt="Logo"
+                      priority
+                      className="block max-w-full dark:hidden"
+                      style={{ width: "auto", height: "auto" }}
+                    />
+                    <Image
+                      width={173}
+                      height={34}
+                      src={whitelogo}
+                      alt="Logo"
+                      priority
+                      className="hidden max-w-full dark:block"
+                      style={{ width: "auto", height: "auto" }}
+                    />
+                  </Link>
                   <p className="text-xl font-extrabold text-body">
                     Get Ready to Set A<br /> Benchmark With Us
                   </p>
@@ -95,7 +95,6 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-
               <div
                 className="wow fadeInUp w-full px-4 lg:w-8/12 xl:w-[35%]"
                 data-wow-delay=".3s"
@@ -130,7 +129,7 @@ const Footer = () => {
                 </div>
               </div>
               <div
-                className="wow fadeInUp w-full px-4 lg:w-4/12 xl:w-3/12"
+                className="wow fadeInUp w-full px-4 lg:w-4/12 xl:w-[18%]"
                 data-wow-delay=".3s"
               >
                 <div className="max-w-[320px]">
