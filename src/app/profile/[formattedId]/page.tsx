@@ -8,11 +8,11 @@ import Link from "next/link";
 
 const Card = () => {
   return (
-    <div className="pt-[110px] text-black dark:text-white">
+    <div className="pt-[30px] min-[574px]:pt-[110px] flex flex-col justify-between h-screen text-black dark:text-white">
       <div className="container lg:max-w-[1305px] lg:px-10">
         <div className="flex justify-center">
-          <div className="w-[21rem] lg:w-[30rem] mt-20">
-            <div className="absolute w-[21rem] lg:w-[30rem] -z-10 bg-[#F1F2F2] rounded-2xl">
+          <div className="w-[18rem] min-[450px]:w-[26.1rem] min-[574px]:w-[30rem] mt-20">
+            <div className="absolute w-[18rem] h-[10.5rem] min-[450px]:h-[19rem] min-[450px]:w-[26.1rem] min-[574px]:w-[30rem] -z-10 bg-[#F1F2F2] rounded-2xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100%"
@@ -59,61 +59,58 @@ const Card = () => {
               <Image
                 src={Group3}
                 alt=""
-                width={45}
-                className=" relative top-8 -right-10"
+                className="relative w-7 min-[450px]:w-14 top-4 min-[450px]:top-6 min-[574px]:top-8 -right-6 min-[450px]:-right-8 min-[574px]:-right-10"
               />
               <Image
                 src={Group1}
                 alt=""
-                width={120}
-                className=" relative left-44 top-16"
+                className="relative w-16 min-[450px]:w-28 left-28 min-[450px]:left-36 min-[574px]:left-44 top-6 min-[450px]:top-10 min-[574px]:top-16"
               />
               <Image
                 src={Group2}
                 alt=""
-                width={100}
-                className=" relative left-[22rem] -top-28"
+                className="relative w-14 min-[450px]:w-24 left-[13.5rem] min-[450px]:left-[18.5rem] min-[574px]:left-[22rem] -top-16 min-[450px]:-top-28 min-[574px]:-top-28"
               />
             </div>
-            <div className="custom-gradient w-full h-[5.56rem] rounded-b-2xl relative -top-14">
+            <div className="custom-gradient w-full h-[4.5rem] min-[450px]:h-[5.56rem] rounded-b-2xl relative -top-14">
               <div className="flex flex-row justify-around items-center">
-                <div className=" uppercase mt-5">
-                  <p className=" font-extrabold">wb24 0979 3703 0417</p>
+                <div className="uppercase mt-5">
+                  <p className="font-medium min-[450px]:font-extrabold">wb24 0979 3703 0417</p>
                   <div className="flex flex-row text-sm gap-2">
                     <p>kumar khan</p>
                     <p>02/28</p>
                   </div>
                 </div>
-                <div className=" mt-5">
-                  <Image src={Vector} alt="" width={50} />
+                <div className="mt-5">
+                  <Image src={Vector} alt="" className="w-10" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-[31rem] mx-auto text-3xl text-center">
+        <div className="w-[20rem] min-[450px]:w-[25rem] h-auto min-[574px]:w-[31rem] mx-auto text-xl min-[450px]:text-2xl min-[574px]:text-3xl text-center">
           <p className="font-medium">
             Kumar Navin is our Employee with the Unique ID :{" "}
           </p>
           <p className="font-semibold">WB21-0690-XXXX-XXXX</p>
         </div>
-        <div className="w-[31rem] mx-auto mt-20 space-y-6">
+        <div className="w-[20rem] min-[450px]:w-[25rem] min-[574px]:w-[31rem] mx-auto mt-10 min-[450px]:mt-20 space-y-6">
           <Link
-            href="/card/profile"
-            className="inline-block wow fadeInUp rounded-md bg-[#000000] w-[31rem] text-center py-[13px] text-base font-semibold uppercase text-white tracking-widest hover:bg-opacity-90"
+            href="/profile/profile-details"   //Sir please take a look at this href link
+            className="inline-block wow fadeInUp rounded-md bg-[#000000] w-[20rem] min-[450px]:w-[25rem] min-[574px]:w-[31rem] text-center py-2 min-[450px]:py-[13px] text-base min-[450px]:font-semibold uppercase text-white tracking-widest hover:bg-opacity-90"
           >
             View Complete Profile
           </Link>
           <Link
             href="/"
-            className="inline-block wow fadeInUp rounded-md bg-[#000000] w-[31rem] text-center py-[13px] text-base font-semibold uppercase text-white tracking-widest hover:bg-opacity-90"
+            className="inline-block wow fadeInUp rounded-md bg-[#000000] w-[20rem] min-[450px]:w-[25rem] min-[574px]:w-[31rem] text-center py-2 min-[450px]:py-[13px] text-base min-[450px]:font-semibold uppercase text-white tracking-widest hover:bg-opacity-90"
           >
             close
           </Link>
         </div>
       </div>
-      <div className="bg-[#05293C] dark:bg-slate-900 text-white font-medium text-xl mt-10">
-          <p className="pl-72 pt-3 pb-5 tracking-wider">To Know More About Us <Link href="/" className=" font-normal text-primary italic underline"> Click Here</Link></p>
+      <div className="bg-[#05293C] dark:bg-slate-900 text-white font-medium text-sm min-[574px]:text-xl mt-10">
+          <p className="pl-10 min-[574px]:pl-24 pt-3 pb-5 tracking-wider">To Know More About Us <Link href="/" className=" font-normal text-primary italic underline"> Click Here</Link></p>
         </div>
     </div>
   );
