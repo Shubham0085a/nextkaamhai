@@ -4,9 +4,9 @@ import React, { useEffect, useState } from "react";
 import Group1 from "@/../public/images/Group1.png";
 import Group2 from "@/../public/images/Group2.png";
 import Group3 from "@/../public/images/Group3.png";
-import Vector from "@/../public/images/Vector.png";
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import { QRCodeSVG } from "qrcode.react";
 
 interface ProfileData {
   personalInfo: {
@@ -58,7 +58,9 @@ interface ProfileData {
     };
   }>;
 }
+
 const Card = () => {
+
   const params = useParams();
   const formattedId = params.formattedId as string;
   const [isLoading, setIsLoading] = useState(true);
@@ -67,7 +69,6 @@ const Card = () => {
   useEffect(() => {
     const fetchProfileData = async () => {
       if (!formattedId) return;
-
       try {
         const response = await fetch(`https://kaamhaicore.app.nityom.cloud/user/employee/${formattedId}`);
         if (!response.ok) {
@@ -82,7 +83,6 @@ const Card = () => {
         setIsLoading(false);
       }
     };
-
     fetchProfileData();
   }, [formattedId]);
   console.log(profileData)
@@ -96,7 +96,7 @@ const Card = () => {
       <div className="container lg:max-w-[1305px] lg:px-10">
         <div className="flex justify-center">
           <div className="w-[18rem] min-[450px]:w-[26.1rem] min-[574px]:w-[30rem] mt-20">
-            <div className="absolute w-[18rem] h-[10.5rem] min-[450px]:h-[19rem] min-[450px]:w-[26.1rem] min-[574px]:w-[30rem] -z-10 bg-[#F1F2F2] rounded-2xl">
+            <div className="absolute w-[18rem] h-[12rem] min-[450px]:h-[17rem] min-[450px]:w-[26.1rem] min-[574px]:h-[19rem] min-[574px]:w-[30rem] -z-10 bg-[#F1F2F2] rounded-2xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="100%"
@@ -148,7 +148,7 @@ const Card = () => {
               <Image
                 src={Group1}
                 alt=""
-                className="relative w-16 min-[450px]:w-28 left-28 min-[450px]:left-36 min-[574px]:left-44 top-6 min-[450px]:top-10 min-[574px]:top-16"
+                className="relative w-16 min-[450px]:w-28 left-28 min-[450px]:left-36 min-[574px]:left-44 top-6 min-[450px]:top-10 min-[574px]:top-12 filter brightness-95"
               />
               <Image
                 src={Group2}
@@ -156,17 +156,17 @@ const Card = () => {
                 className="relative w-14 min-[450px]:w-24 left-[13.5rem] min-[450px]:left-[18.5rem] min-[574px]:left-[22rem] -top-16 min-[450px]:-top-28 min-[574px]:-top-28"
               />
             </div>
-            <div className="custom-gradient w-full h-[4.5rem] min-[450px]:h-[5.56rem] rounded-b-2xl relative -top-14">
+            <div className="custom-gradient w-full h-[4.5rem] min-[450px]:h-[5.56rem] rounded-b-2xl relative -top-8 min-[450px]:-top-16 min-[574px]:-top-12">
               <div className="flex flex-row justify-around items-center">
-                <div className="uppercase mt-5">
-                  <p className="font-medium min-[450px]:font-extrabold">{formattedId}</p>
+                <div className="uppercase dark:text-[#000000]">
+                  <p className="font-bold mt-2 min-[450px]:mt-4 min-[450px]:font-extrabold">{formattedId}</p>
                   <div className="flex flex-row text-sm gap-2">
                     <p>{profileData?.employeeInfo?.personalInfo?.name}</p>
-                    <p>02/28</p>
+                    <p>≤ 02/28</p>
                   </div>
                 </div>
-                <div className="mt-5">
-                  <Image src={Vector} alt="" className="w-10" />
+                <div className="-mt-7 custom-gradient-qr flex rounded-md">
+                  <QRCodeSVG value="/" bgColor="#E6C759" marginSize={2} opacity={0.8} className="border-2 border-[#000000] rounded-md m-2 h-10 min-[450px]:h-12 min-[574px]:h-16 w-10 min-[450px]:w-12 min-[574px]:w-16"/>
                 </div>
               </div>
             </div>
@@ -174,7 +174,7 @@ const Card = () => {
         </div>
         <div className="w-[20rem] min-[450px]:w-[25rem] h-auto min-[574px]:w-[31rem] mx-auto text-xl min-[450px]:text-2xl min-[574px]:text-3xl text-center">
           <p className="font-medium">
-            {profileData?.employeeInfo?.personalInfo?.name} is our Employee with the Unique ID :{" "}
+          {profileData?.employeeInfo?.personalInfo?.name} is our Employee with the Unique ID :{" "}
           </p>
           <p className="font-semibold">{formattedId}</p>
         </div>
