@@ -166,7 +166,7 @@ const Card = () => {
                   </div>
                 </div>
                 <div className="-mt-7 custom-gradient-qr flex rounded-md">
-                  <QRCodeSVG value="/" bgColor="#E6C759" marginSize={2} opacity={0.8} className="border-2 border-[#000000] rounded-md m-2 h-10 min-[450px]:h-12 min-[574px]:h-16 w-10 min-[450px]:w-12 min-[574px]:w-16"/>
+                  <QRCodeSVG value={`https://www.kaamHai.in/profile/${formattedId}`} bgColor="#E6C759" marginSize={2} opacity={0.8} className="border-2 border-[#000000] rounded-md m-2 h-10 min-[450px]:h-12 min-[574px]:h-16 w-10 min-[450px]:w-12 min-[574px]:w-16"/>
                 </div>
               </div>
             </div>
