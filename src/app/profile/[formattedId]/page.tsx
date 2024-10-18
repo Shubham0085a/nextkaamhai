@@ -1,12 +1,96 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Group1 from "@/../public/images/Group1.png";
 import Group2 from "@/../public/images/Group2.png";
 import Group3 from "@/../public/images/Group3.png";
 import Vector from "@/../public/images/Vector.png";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
+interface ProfileData {
+  personalInfo: {
+    name: string;
+    phoneNumber: string;
+    dob: string;
+    state: string;
+    emergencyContact: {
+      name: string;
+      contactNumber: string;
+      relationship: string;
+    };
+    localContact: {
+      name: string;
+      contactNumber: string;
+      relationship: string;
+    };
+  };
+  professionalPreferences: {
+    category: string;
+    jobTitle: string[];
+    skills: string[];
+    preferredWorkLocation: string[];
+    preferredWorkType: string;
+    totalExperience: number;
+    workTimings: string;
+    salaryType: string;
+  };
+  workExperience: Array<{
+    companyName: string;
+    location: string;
+    designation: string;
+    preferredWorkType: string;
+    yearOfExperienceFrom: string;
+    yearOfExperienceTo: string;
+  }>;
+  facePhoto: {
+    uri: string;
+  };
+  id: string;
+  workStatus: string;
+  documents: Array<{
+    type: string;
+    front: {
+      uri: string;
+    };
+    back: {
+      uri: string;
+    };
+  }>;
+}
 const Card = () => {
+  const params = useParams();
+  const formattedId = params.formattedId as string;
+  const [isLoading, setIsLoading] = useState(true);
+  const [profileData, setProfileData] =  useState<any>(null);
+  const [error, setError] = useState<string | null>(null);
+  useEffect(() => {
+    const fetchProfileData = async () => {
+      if (!formattedId) return;
+
+      try {
+        const response = await fetch(`https://kaamhaicore.app.nityom.cloud/user/employee/${formattedId}`);
+        if (!response.ok) {
+          throw new Error('Failed to fetch profile data');
+        }
+        const data = await response.json();
+        setProfileData(data);
+      } catch (err) {
+        setError('Error fetching profile data');
+        console.error(err);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchProfileData();
+  }, [formattedId]);
+  console.log(profileData)
+  if (isLoading) return <div className="flex justify-center items-center h-screen">
+  <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
+</div>;
+  if (error) return <div>Error: {error}</div>;
+
   return (
     <div className="pt-[30px] min-[574px]:pt-[110px] flex flex-col justify-between h-screen text-black dark:text-white">
       <div className="container lg:max-w-[1305px] lg:px-10">
@@ -75,9 +159,9 @@ const Card = () => {
             <div className="custom-gradient w-full h-[4.5rem] min-[450px]:h-[5.56rem] rounded-b-2xl relative -top-14">
               <div className="flex flex-row justify-around items-center">
                 <div className="uppercase mt-5">
-                  <p className="font-medium min-[450px]:font-extrabold">wb24 0979 3703 0417</p>
+                  <p className="font-medium min-[450px]:font-extrabold">{formattedId}</p>
                   <div className="flex flex-row text-sm gap-2">
-                    <p>kumar khan</p>
+                    <p>{profileData?.employeeInfo?.personalInfo?.name}</p>
                     <p>02/28</p>
                   </div>
                 </div>
@@ -90,9 +174,9 @@ const Card = () => {
         </div>
         <div className="w-[20rem] min-[450px]:w-[25rem] h-auto min-[574px]:w-[31rem] mx-auto text-xl min-[450px]:text-2xl min-[574px]:text-3xl text-center">
           <p className="font-medium">
-            Kumar Navin is our Employee with the Unique ID :{" "}
+            {profileData?.employeeInfo?.personalInfo?.name} is our Employee with the Unique ID :{" "}
           </p>
-          <p className="font-semibold">WB21-0690-XXXX-XXXX</p>
+          <p className="font-semibold">{formattedId}</p>
         </div>
         <div className="w-[20rem] min-[450px]:w-[25rem] min-[574px]:w-[31rem] mx-auto mt-10 min-[450px]:mt-20 space-y-6">
           <Link
