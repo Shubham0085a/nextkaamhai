@@ -72,6 +72,8 @@ const config: Config = {
   variants: {
     animation: ['responsive', 'motion-safe', 'motion-reduce'],
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 };
 export default config;
