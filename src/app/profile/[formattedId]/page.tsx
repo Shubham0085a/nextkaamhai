@@ -5,11 +5,12 @@ import Group1 from "@/../public/images/Group1.png";
 import Group2 from "@/../public/images/Group2.png";
 import Group3 from "@/../public/images/Group3.png";
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { QRCodeSVG } from "qrcode.react";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { IoMdShare } from "react-icons/io";
 import { MdCancel } from "react-icons/md";
+import { Skeleton } from "@/components/ui/skeleton";
 
 interface ProfileData {
   personalInfo: {
@@ -64,10 +65,14 @@ interface ProfileData {
 
 const Card = () => {
   const params = useParams();
+  const router = useRouter();
   const formattedId = params.formattedId as string;
   const [isLoading, setIsLoading] = useState(true);
   const [profileData, setProfileData] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const placeholderImage = "/images/person-icon.png";
   useEffect(() => {
     const fetchProfileData = async () => {
       if (!formattedId) return;
@@ -89,11 +94,26 @@ const Card = () => {
     };
     fetchProfileData();
   }, [formattedId]);
+  const handleViewProfile = () => {
+    router.push(`/profile/${formattedId}/profile-details`);
+  };
+  const handleShareProfile = () => {
+    const shareUrl = `${window.location.origin}/profile/${formattedId}/profile-details`;
+    navigator.clipboard.writeText(shareUrl);
+    alert("Profile link copied to clipboard!"); // Notify the user
+  };
   console.log(profileData);
   if (isLoading)
     return (
       <div className="flex justify-center items-center h-screen">
-        <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
+        {/* <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div> */}
+        <div className="flex flex-col space-y-3">
+      <Skeleton className="h-[12rem] w-[25rem] rounded-xl bg-black" />
+      <div className="space-y-2">
+        <Skeleton className="h-4 w-[250px] bg-black" />
+        <Skeleton className="h-4 w-[200px] bg-black" />
+      </div>
+    </div>
       </div>
     );
   if (error) return <div>Error: {error}</div>;
@@ -164,11 +184,17 @@ const Card = () => {
                   alt=""
                   className="relative w-16 min-[450px]:w-28 left-28 min-[450px]:left-36 min-[574px]:left-44 top-6 min-[450px]:top-10 min-[574px]:top-12 filter brightness-95"
                 />
-                <Image
-                  src={Group2}
-                  alt=""
-                  className="relative w-14 min-[450px]:w-24 left-[13.5rem] min-[450px]:left-[18.5rem] min-[574px]:left-[22rem] -top-16 min-[450px]:-top-28 min-[574px]:-top-28"
-                />
+                <div className="relative w-14 h-[7.1rem] min-[450px]:w-24 left-[13.5rem] min-[450px]:left-[18.5rem] min-[574px]:left-[22rem] -top-16 min-[450px]:-top-28 min-[574px]:-top-28">
+                  <Image
+                    // src={profileData?.employeeInfo?.facePhoto?.uri}
+                    src={imageLoaded ? profileData?.employeeInfo?.facePhoto?.uri : placeholderImage}
+                    alt="Profile face photo"
+                    width={96} // Set width as per your design
+                    height={96} // Set height as per your design
+                    className="w-full h-auto"
+                    onLoad={() => setImageLoaded(true)}
+                  />
+                </div>
               </div>
               <div className="custom-gradient w-full h-[4.5rem] min-[450px]:h-[5.56rem] rounded-b-2xl relative -top-8 min-[450px]:-top-16 min-[574px]:-top-12">
                 <div className="flex flex-row justify-around items-center">
@@ -201,18 +227,18 @@ const Card = () => {
             <p className="font-semibold">{formattedId}</p>
           </div>
           <div className="w-[14rem] min-[450px]:w-[27rem] min-[574px]:w-[31rem] mx-auto mt-10 flex flex-col min-[450px]:flex-row min-[450px]:justify-around gap-4 min-[450px]:gap-0">
-            <Link
-              href="/profile/profile-details" //Sir please take a look at this href link
+            <button
+              onClick={handleViewProfile}
               className="inline-flex items-center justify-center gap-2 cursor-pointer wow fadeInUp rounded-full bg-[#000000] text-center py-2 px-5 min-[450px]:py-[13px] text-base min-[450px]:font-semibold uppercase text-white tracking-widest hover:bg-opacity-90"
             >
               <MdOutlineRemoveRedEye /> View Profile
-            </Link>
-            <Link
-              href="/"
+            </button>
+            <button
+              onClick={handleShareProfile}
               className="inline-flex items-center justify-center gap-2 wow fadeInUp rounded-full bg-transparent border-2 border-[#000000] text-center py-2 px-5 min-[450px]:py-[13px] text-base min-[450px]:font-semibold uppercase text-[#000000] tracking-widest hover:bg-opacity-90"
             >
               <IoMdShare /> Share Profile
-            </Link>
+            </button>
           </div>
         </div>
       </div>
